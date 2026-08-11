@@ -89,3 +89,6 @@ The following mods and dependencies were ported over from the main ATM9 instance
 - domum_ornamentum-1.20.1-1.0.291-snapshot-universal.jar (updated)
 - ponderjs-1.20.1-2.0.6.jar (updated)
 - sliceanddice-forge-3.5.2.jar (updated)
+- amendments-1.20-2.2.3.jar (updated)
+- waystones-forge-1.20.1-14.1.17.jar (updated)
+- ars_creo-1.20.1-4.3.0.jar (updated)
