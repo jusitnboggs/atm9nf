@@ -1,0 +1,29 @@
+{
+	member: {
+		name: "Member"
+		power: 1
+		condition: "always_active"
+		ftbessentials.fly: true
+		ftbessentials.admin.fly: true
+		ftbessentials.back: true
+		ftbessentials.home: true
+		ftbessentials.spawn: true
+		ftbessentials.tpa: true
+		ftbessentials.rtp: true
+	}
+	vip: {
+		name: "VIP"
+		power: 50
+		ftbranks.name_format: "&bVIP {name}"
+		ftbessentials.fly: true
+		ftbessentials.admin.fly: true
+		ftbessentials.back: true
+	}
+	admin: {
+		name: "Admin"
+		power: 1000
+		condition: "op"
+		ftbranks.name_format: "&2{name}"
+		"ftbessentials.*": true
+	}
+}
