@@ -33,7 +33,7 @@
 	#Range: 0 ~ 100
 	percent_loss_on_death = 0
 	#Graveless Dimensions
-	no_grave_dimension = []
+	no_grave_dimension = ["*"]
 
 #Options related to player's alignment
 [alignment]
