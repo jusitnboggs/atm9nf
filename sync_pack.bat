@@ -24,16 +24,26 @@ if %errorlevel% neq 0 (
         git remote set-url origin https://github.com/jusitnboggs/atm9nf.git >nul 2>nul
     )
 
-    echo [GIT] Fetching latest pack configs, KubeJS scripts, and tweaks...
-    git fetch origin master --quiet 2>nul
-    if %errorlevel% equ 0 (
-        git reset --hard origin/master >nul 2>nul
-        echo [GIT] Pack repository files synced successfully!
+    if exist ".dev_environment" (
+        echo [DEV MODE] Developer environment detected ^(.dev_environment^).
+        echo           Skipping git reset to protect your local uncommitted work.
+        echo.
+    ) else if "%ATM9_DEV%"=="1" (
+        echo [DEV MODE] Developer environment variable ATM9_DEV detected.
+        echo           Skipping git reset to protect your local uncommitted work.
+        echo.
     ) else (
-        echo [WARNING] Could not connect to GitHub repository.
-        echo           Proceeding with local pack files.
+        echo [GIT] Fetching latest pack configs, KubeJS scripts, and tweaks...
+        git fetch origin master --quiet 2>nul
+        if %errorlevel% equ 0 (
+            git reset --hard origin/master >nul 2>nul
+            echo [GIT] Pack repository files synced successfully!
+        ) else (
+            echo [WARNING] Could not connect to GitHub repository.
+            echo           Proceeding with local pack files.
+        )
+        echo.
     )
-    echo.
 )
 
 echo [MODS] Running mod sync downloader...

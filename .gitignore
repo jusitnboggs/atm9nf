@@ -1,4 +1,5 @@
 .idea
+.dev_environment
 *.metadata.json
 scratch/
 saves/
