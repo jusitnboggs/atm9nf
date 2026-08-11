@@ -28,6 +28,7 @@ ServerEvents.tags('item', allthemods => {
 
   allthemods.add('forge:dusts', 'alltheores:netherite_dust')
   allthemods.add('forge:dusts/netherite', 'alltheores:netherite_dust')
+  allthemods.add('productivebees:flowers/lepidolite', '#forge:storage_blocks/lepidolite')
   allthemods.add('forbidden_arcanus:modifier/eternal_incompatible',[
     '#alltheores:ore_hammers','@ftbic','minecraft:nether_star','bloodmagic:sanguinereverter','#occultism:miners/ores','apotheosis:potion_charm'
   ])
