@@ -19,6 +19,7 @@ applied_extended_crafting-1.1.2.jar
 applied-botanics-forge-1.5.2.jar
 appliedcooking-4.0.0.jar
 sebastrnlib-4.0.0.jar
+create-1.20.1-6.0.6.jar
 appliedcreate-1.20.1-1.1.6.jar
 appliede-0.14.7-fix2.jar
 appliedenoughitems-1.1.1.jar
