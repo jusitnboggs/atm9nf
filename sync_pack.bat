@@ -57,11 +57,13 @@ if %errorlevel% neq 0 (
     if %errorlevel% equ 0 (
         :: Check for outdated / updated config files
         set "CONFIG_COUNT=0"
+        set "SCRIPT_UPDATED=0"
         for /f "tokens=*" %%F in ('git diff --name-only HEAD origin/master 2^>nul') do (
             if "!CONFIG_COUNT!"=="0" (
                 echo [CONFIG SYNC] Outdated local pack files detected:
             )
             echo   - %%F
+            if "%%F"=="sync_pack.bat" set "SCRIPT_UPDATED=1"
             set /a CONFIG_COUNT+=1
         )
 
@@ -72,6 +74,16 @@ if %errorlevel% neq 0 (
             echo [CONFIG SYNC] Updating !CONFIG_COUNT! pack configuration files...
             git reset --hard origin/master >nul 2>nul
             echo [CONFIG SYNC] Pack configuration files updated successfully!
+            
+            if "!SCRIPT_UPDATED!"=="1" (
+                echo.
+                echo =========================================================================
+                echo   [SELF-UPDATE] New script version installed! Restarting sync...
+                echo =========================================================================
+                echo.
+                call "%~f0" %*
+                exit /b 0
+            )
         )
     ) else (
         echo [WARNING] Could not connect to GitHub repository.
