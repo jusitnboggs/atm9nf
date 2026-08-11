@@ -7,18 +7,21 @@ This fork enhances the base pack with additional mods (ProjectE, AutoEMC, Avarit
 
 ## Setup & Cloning Instructions
 
-To sync this customized pack directly into your Prism Launcher instance:
+To sync this customized pack directly into an existing Prism Launcher instance (even if the directory is non-empty):
 
 1. Right-click your **ATM9 - No Frills** instance in Prism Launcher and select **Folder**.
 2. Open the `minecraft` subfolder.
-3. Open a command prompt or terminal in that `minecraft` folder:
-   - **Shortcut:** Shift + Right-click in the empty space inside the folder and select **Open PowerShell window here** or **Open in Terminal**.
+3. Open a command prompt or terminal inside that `minecraft` folder:
    - **Address Bar Method:** Click the folder path bar at the top of File Explorer, type `cmd` or `powershell`, and hit **Enter**.
-4. Run the following command to clone this repository into your folder:
+4. Run the following command to clone and sync the repository into your non-empty folder:
 
-```bash
+```cmd
+git init && git remote add origin https://github.com/jusitnboggs/atm9nf.git && git fetch origin master && git reset --hard origin/master
 ```
-5. Run **`download_mods.bat`** (or `scripts/download_mods.ps1`) to automatically sync and download all added or updated mod `.jar` files for this customized fork.
+
+*(Alternatively, if you already downloaded `sync_repo.bat` into the folder, simply double-click **`sync_repo.bat`**).*
+
+5. Double-click **`download_mods.bat`** (or run `scripts/download_mods.ps1`) to automatically delete outdated mod versions and download all added or updated mod `.jar` files for this customized fork.
 
 ---
 

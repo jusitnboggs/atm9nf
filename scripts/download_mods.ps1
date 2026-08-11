@@ -26,18 +26,36 @@ if (-not (Test-Path $urlsFile)) {
 $modUrls = Get-Content $urlsFile -Raw | ConvertFrom-Json
 
 # 1. Clean up outdated versions of updated mods
+Write-Host "Checking for outdated versions of updated mods..." -ForegroundColor Cyan
+
+$modTargets = @()
+if (Test-Path $urlsFile) {
+    $modUrlsObj = Get-Content $urlsFile -Raw | ConvertFrom-Json
+    foreach ($prop in $modUrlsObj.PSObject.Properties) {
+        $modTargets += $prop.Name
+    }
+}
 if (Test-Path $updatedFile) {
     $updatedMods = Get-Content $updatedFile | Where-Object { $_ -and -not $_.StartsWith("#") }
-    foreach ($newModName in $updatedMods) {
-        $baseName = $newModName -replace '-forge|-mc1\.20\.1|-1\.20\.1|-1\.20|v\d+.*|\d+\.\d+.*',''
-        $baseName = $baseName.Trim('-').Trim('_')
+    $modTargets += $updatedMods
+}
+
+$modTargets = $modTargets | Select-Object -Unique
+
+foreach ($newModName in $modTargets) {
+    # Extract exact mod base prefix before version string or forge marker
+    $baseName = $newModName -replace '[-_](?:forge|mc)?\d+.*|\d+\.\d+.*|\.jar$',''
+    $baseName = $baseName.Trim('-').Trim('_')
+    
+    if ($baseName -and $baseName.Length -ge 3) {
+        $existing = @()
+        $existing += Get-ChildItem $modsDir -Filter "$baseName-*.jar" -ErrorAction SilentlyContinue | Where-Object { $_.Name -ne $newModName }
+        $existing += Get-ChildItem $modsDir -Filter "$baseName_*.jar" -ErrorAction SilentlyContinue | Where-Object { $_.Name -ne $newModName }
+        $existing = $existing | Select-Object -Unique
         
-        if ($baseName) {
-            $existing = Get-ChildItem $modsDir -Filter "$baseName*.jar" -ErrorAction SilentlyContinue | Where-Object { $_.Name -ne $newModName }
-            foreach ($oldJar in $existing) {
-                Write-Host "Removing outdated mod version: $($oldJar.Name)" -ForegroundColor Yellow
-                Remove-Item $oldJar.FullName -Force -ErrorAction SilentlyContinue
-            }
+        foreach ($oldJar in $existing) {
+            Write-Host "[REMOVING OUTDATED MOD] $($oldJar.Name) -> Replacing with $newModName" -ForegroundColor Yellow
+            Remove-Item $oldJar.FullName -Force -ErrorAction SilentlyContinue
         }
     }
 }
