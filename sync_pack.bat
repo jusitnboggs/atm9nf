@@ -64,6 +64,7 @@ if %errorlevel% neq 0 (
             )
             echo   - %%F
             if "%%F"=="sync_pack.bat" set "SCRIPT_UPDATED=1"
+            if "%%F"=="scripts/download_mods.ps1" set "SCRIPT_UPDATED=1"
             set /a CONFIG_COUNT+=1
         )
 
