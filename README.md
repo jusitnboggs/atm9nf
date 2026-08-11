@@ -30,6 +30,27 @@ To sync this customized pack directly into an existing Prism Launcher instance (
 
 ---
 
+## Safe Pack Update & Force-Sync Commands
+
+To update or force-sync your pack files to the latest version on GitHub **without deleting your personal files or world saves**:
+
+> [!TIP]
+> **Safe Update (Preserves untracked user files & world saves)**
+>
+> **PowerShell:**
+> ```powershell
+> git fetch origin master; git reset --hard origin/master
+> ```
+>
+> **Command Prompt (CMD):**
+> ```cmd
+> git fetch origin master && git reset --hard origin/master
+> ```
+>
+> *Note: Avoid running `git clean -fd` unless you specifically want to delete all untracked local files.*
+
+---
+
 ## Customized Features in this Fork
 
 - **ProjectE & AutoEMC Integration**: Full EMC pricing support with custom `pe_custom_conversions` for:
