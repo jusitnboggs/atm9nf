@@ -39,3 +39,7 @@
 			#Whether this feature should naturally spawn in the world.
 			Enable = true
 
+		[World.Features."Rubberwood Trees"]
+			#Whether this feature should naturally spawn in the world.
+			Enable = true
+

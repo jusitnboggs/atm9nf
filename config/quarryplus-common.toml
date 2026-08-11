@@ -36,6 +36,10 @@
 	#The max distance(unit: blocks) Flexible Marker can reach
 	#Range: 16 ~ 4096
 	flexMarkerMaxDistance = 256
+	#Remove fluids after Chunk Destroyer finishes working. Recommended to set `false` as some issues are reported in #371
+	removeFluidAfterFinishedByCD = false
+	#Custom player
+	customPlayer = false
 
 #QuarryPlus Machines. Set true to enable machine or item.
 [machines]

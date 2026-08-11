@@ -182,8 +182,6 @@
 		guiOverlayPosition = 1
 		#The blood usage in mB per tick.
 		bloodUsage = 1
-		#If the broom should spawn in loot chests.
-		lootChests = true
 		#Show broom part tooltips on source items.
 		broomPartTooltips = true
 		#The X offset for the broom gui overlay.
@@ -320,6 +318,10 @@
 		alwaysVisibleInCreative = false
 		#The maximum amount of vengeance spirits naturally spawnable in the spawnLimitArea.
 		spawnLimit = 2
+
+	[mob.werewolf]
+		#If villagers struck by lightning should have a 50% chance of becoming a werewolf villager
+		convertOnLightning = true
 
 [entity]
 

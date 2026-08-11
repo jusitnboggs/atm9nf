@@ -1,0 +1,6 @@
+{
+  "__comment": "Instructions: https://blakesmods.com/docs/cucumber/tags-config",
+  "forge:dusts/niter": "thermal:niter_dust",
+  "forge:dusts/saltpeter": "bloodmagic:saltpeter",
+  "forge:ingots/graphite": "bigreactors:graphite_ingot"
+}

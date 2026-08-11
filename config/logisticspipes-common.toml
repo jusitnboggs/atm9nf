@@ -1,0 +1,92 @@
+
+#Pipe network detection settings
+[detection]
+	#Max detection length for pipe network scan
+	#Range: 1 ~ 1000
+	detectionLength = 50
+	#Max pipes counted during detection
+	#Range: 1 ~ 10000
+	detectionCount = 100
+	#Detection frequency in ticks
+	#Range: > 1
+	detectionFrequency = 600
+	#Max unrouted connections per pipe
+	#Range: 1 ~ 512
+	maxUnroutedConnections = 32
+
+#Orderer GUI settings
+[orderer]
+	#Invert mouse wheel for item count in orderer
+	invertCountWheel = false
+	#Invert mouse wheel for page navigation in orderer
+	invertPageWheel = false
+	#Set the default configuration for the popup of the Orderer Gui. Should it be used?
+	displayPopup = true
+
+#HUD settings
+[hud]
+	#HUD render distance in blocks
+	#Range: 1 ~ 256
+	hudRenderDistance = 15
+	#Show extra tooltip info
+	tooltipInfo = false
+	#Make pipes opaque
+	opaque = false
+
+#Power settings
+[power]
+	#Pipe block durability
+	#Range: 0.0 ~ 1.0
+	pipeDurability = 0.25
+	#Disable power usage entirely
+	powerUsageDisabled = false
+	#Power usage multiplier
+	#Range: 0.0 ~ 100.0
+	powerUsageMultiplier = 1.0
+	#Power used per crafting operation (RF)
+	#Range: > 0
+	craftingTablePowerUsage = 250
+	#How the RF power junction acquires FE. ADJACENT: pulls from any neighbouring IEnergyStorage each tick. CABLE: passive — FE cables push into the junction.
+	#Allowed Values: ADJACENT, CABLE
+	powerSourceMode = "ADJACENT"
+
+#Logistics system settings
+[logistics]
+	#Program compiler speed multiplier
+	#Range: 0.01 ~ 100.0
+	compilerSpeed = 1.0
+	#Enable research system
+	enableResearchSystem = false
+	#Enable particle effects
+	enableParticleFx = true
+	#Check for mod updates on startup
+	checkForUpdates = true
+	#Enable easter eggs
+	easterEggs = true
+	#Max robot operation distance in blocks
+	#Range: 1 ~ 512
+	maxRobotDistance = 64
+
+#Multithreading settings
+[multithread]
+	#Number of routing worker threads
+	#Range: 1 ~ 32
+	threadCount = 4
+	#Worker thread priority
+	#Range: 1 ~ 10
+	threadPriority = 5
+
+#Performance settings
+[performance]
+	#Disable async work processing (use main thread only)
+	disableAsyncWork = false
+	#Minimum inventory slot accesses per tick
+	#Range: > 1
+	minSlotAccess = 10
+	#Maximum inventory slot accesses per tick (0 = unlimited)
+	#Range: > 0
+	maxSlotAccess = 0
+	#Minimum ticks between async jobs
+	#Range: > 1
+	minJobTickLength = 1
+

@@ -1,0 +1,34 @@
+#The amount of AE energy per tick used by the ME Transmutation Module.
+#Range: 0.0 ~ 1.7976931348623157E308
+moduleEnergyUsage = 25.0
+#The amount of AE energy used to transmute items, per 2000 EMC.
+#Range: 0.0 ~ 1.7976931348623157E308
+transmutationPowerMultiplier = 1.0
+#The number of EMC units (of any tier) per byte as used in AE2 auto-crafting.
+#It is not recommended to set this very low as this will require unreasonably large
+#amounts of crafting storage for some jobs.
+#Range: > 1
+emcPerByte = 1000000
+#When extracting items from a Transmutation Terminal via EMC, deduct EMC only
+#from the player using the terminal rather than all players with modules attached.
+#This option does not cover re-insertion and conversion back into EMC.
+terminalExtractFromOwnEmcOnly = false
+#How many ticks to wait before the next player EMC sync when manipulating stored EMC.
+#Range: 1 ~ 200
+syncThrottleInterval = 20
+#Maximum number of serialized AEKey entries to keep in the in-memory LRU KEY_CACHE (GridInventory)
+#Range: > 1
+keyCacheMax = 2048
+#How many keys to finalize (warm) per server tick from the background warm queue to avoid single-tick spikes
+#Range: > 0
+warmKeysPerTick = 16
+#Debounce interval in milliseconds for coalesced async saves of the persisted EMC cache to disk
+#Range: > 0
+saveDebounceMillis = 1000
+
+#Minimum number of server ticks to wait between pattern update requests per node
+[patterns]
+	#Minimum ticks between ICraftingProvider.requestUpdate() calls for the same node
+	#Range: > 0
+	patternMinUpdateInterval = 20
+

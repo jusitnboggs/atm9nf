@@ -1,0 +1,4 @@
+#Item sort order in ae2 terminals
+#Allowed Values: JEI, NAME, AMOUNT, MOD
+sortOrder = "JEI"
+
