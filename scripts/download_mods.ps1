@@ -25,38 +25,19 @@ if (-not (Test-Path $urlsFile)) {
 
 $modUrls = Get-Content $urlsFile -Raw | ConvertFrom-Json
 
-# 1. Clean up outdated versions of updated mods
-Write-Host "Checking for outdated versions of updated mods..." -ForegroundColor Cyan
-
-$modTargets = @()
-if (Test-Path $urlsFile) {
-    $modUrlsObj = Get-Content $urlsFile -Raw | ConvertFrom-Json
-    foreach ($prop in $modUrlsObj.PSObject.Properties) {
-        $modTargets += $prop.Name
-    }
-}
+# 1. Clean up explicitly replaced old mod versions (exact matching only, no wildcards)
 if (Test-Path $updatedFile) {
-    $updatedMods = Get-Content $updatedFile | Where-Object { $_ -and -not $_.StartsWith("#") }
-    $modTargets += $updatedMods
-}
-
-$modTargets = $modTargets | Select-Object -Unique
-
-foreach ($newModName in $modTargets) {
-    if ([string]::IsNullOrWhiteSpace($newModName)) { continue }
-    $baseName = $newModName -replace '[-_](?:forge|mc)?\d+.*|\d+\.\d+.*|\.jar$',''
-    $baseName = $baseName.Trim('-').Trim('_')
-    
-    if ($baseName -and $baseName.Length -ge 4) {
-        $existing = Get-ChildItem $modsDir -Filter "*.jar" -ErrorAction SilentlyContinue | Where-Object { 
-            ($_.Name.StartsWith("$baseName-", [System.StringComparison]::OrdinalIgnoreCase) -or 
-             $_.Name.StartsWith("${baseName}_", [System.StringComparison]::OrdinalIgnoreCase)) -and
-            $_.Name -ne $newModName
-        }
-        
-        foreach ($oldJar in $existing) {
-            Write-Host "[REMOVING OUTDATED MOD] $($oldJar.Name) -> Replacing with $newModName" -ForegroundColor Yellow
-            Remove-Item $oldJar.FullName -Force -ErrorAction SilentlyContinue
+    Write-Host "Checking for explicitly replaced old mod versions..." -ForegroundColor Cyan
+    $lines = Get-Content $updatedFile | Where-Object { $_ -and -not $_.StartsWith("#") }
+    foreach ($line in $lines) {
+        if ($line -match "^\s*([^\s]+)\s*->\s*([^\s]+)\s*$") {
+            $oldJar = $matches[1]
+            $newJar = $matches[2]
+            $oldPath = Join-Path $modsDir $oldJar
+            if (Test-Path $oldPath) {
+                Write-Host "[REMOVING OUTDATED MOD] $oldJar -> Replacing with $newJar" -ForegroundColor Yellow
+                Remove-Item $oldPath -Force -ErrorAction SilentlyContinue
+            }
         }
     }
 }
@@ -97,3 +78,9 @@ foreach ($prop in $modUrls.PSObject.Properties) {
 Write-Host "`n==========================================================" -ForegroundColor Cyan
 Write-Host "  Sync Complete: $downloaded downloaded, $skipped present, $failed failed" -ForegroundColor Cyan
 Write-Host "==========================================================" -ForegroundColor Cyan
+
+if ($failed -gt 0) {
+    exit 1
+} else {
+    exit 0
+}
