@@ -2,6 +2,22 @@ All The Mods 9 - No Frills
 ======
 This is the official repository and issue-tracker for All The Mods 9 No Frills
 
+## Setup & Cloning Instructions
+
+To sync this customized pack directly into your Prism Launcher instance:
+
+1. Right-click your **ATM9 - No Frills** instance in Prism Launcher and select **Folder**.
+2. Open the `minecraft` subfolder.
+3. Open a command prompt or terminal in that `minecraft` folder:
+   - **Shortcut:** Shift + Right-click in the empty space inside the folder and select **Open PowerShell window here** or **Open in Terminal**.
+   - **Address Bar Method:** Click the folder path bar at the top of File Explorer, type `cmd` or `powershell`, and hit **Enter**.
+4. Run the following command to clone this repository into your folder:
+
+```bash
+git clone https://github.com/jusitnboggs/atm9nf.git .
+```
+> **Note:** Make sure to include the `.` at the end so Git clones the contents directly into your `minecraft` directory instead of creating a subfolder.
+
 Does "All The Mods" *really* contain ALL THE MODS? No, of course not.
 
 Need Help?
