@@ -12,6 +12,8 @@ The following existing mods were updated to match the main ATM9 instance:
 - rechiseled-1.2.5-forge-mc1.20.1.jar
 - rechiseledcreate-1.1.1-forge-mc1.20.jar
 - supermartijn642corelib-1.1.23a-forge-mc1.20.1.jar
+- create-1.20.1-6.0.6.jar
+- ad_astra-forge-1.20.1-1.15.20.jar
 
 *(Note: gtceu and forge updates were intentionally excluded.)*
 
@@ -43,7 +45,6 @@ The following mods and dependencies were ported over from the main ATM9 instance
 - ae2craftpriority-0.1.0.jar
 - AEInfinityBooster-1.20.1-1.0.0+51.jar
 - applied_extended_crafting-1.1.2.jar
-- applied_greg-1.0.3.jar
 - appliedcooking-4.0.0.jar
 - appliedcreate-1.20.1-1.1.6.jar
 - appliede-0.14.7-fix2.jar
@@ -54,9 +55,9 @@ The following mods and dependencies were ported over from the main ATM9 instance
 - appliedsoul-1.20.1-1.0.0.jar
 - AppliedVoltex-1.0.2.jar
 - assembler-matrix-prioritization-forge-1.20.1-1.0.3.jar
-- bettergtae-1.2.2.jar
 - crazyae2addons-3.2.3-all.jar
 - extendedae_plus-1.5.5.jar
+- ExtendedAE-1.20-1.4.7-forge.jar
 - megacells-forge-2.4.6-1.20.1.jar
 - merequester-forge-1.20.1-1.1.5.jar
 - rechiseledae-1.0.1-forge-mc1.20.1.jar
@@ -75,3 +76,5 @@ The following mods and dependencies were ported over from the main ATM9 instance
 - sebastrnlib-4.0.0.jar
 - Torcherino-forge-1.20.1-20.0.0.jar
 - wcwt-1.20.1.7-hotfix.jar
+- ldlib-forge-1.20.1-1.0.45.jar
+- guideme-20.1.13.jar
