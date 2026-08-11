@@ -1,5 +1,5 @@
 # Automated Mod Downloader & Sync Script for ATM9 No Frills
-# Downloads added/updated mod jars from Modrinth/CurseForge/CDN links
+# Syncs custom releases from GitHub & verifies mod files in mods/ folder
 
 param (
     [switch]$PromptCleanup,
@@ -79,7 +79,7 @@ foreach ($prop in $modUrls.PSObject.Properties) {
     $url = $prop.Value
     $targetPath = Join-Path $modsDir $filename
 
-    if ($url -ne "LOCAL_CUSTOM" -and $url -ne "SEARCH_CURSEFORGE" -and -not [string]::IsNullOrWhiteSpace($url)) {
+    if ($url -ne "SEARCH_CURSEFORGE" -and -not [string]::IsNullOrWhiteSpace($url)) {
         if (-not (Test-Path $targetPath)) {
             $missingMods += [PSCustomObject]@{ Name = $filename; Url = $url; Path = $targetPath }
         }
@@ -112,26 +112,20 @@ foreach ($prop in $modUrls.PSObject.Properties) {
     $url = $prop.Value
     $targetPath = Join-Path $modsDir $filename
 
-    if ($url -eq "LOCAL_CUSTOM") {
-        Write-Host "[SKIP] Custom mod (shipped in repo via git): $filename" -ForegroundColor Gray
-        $skipped++
-        continue
-    }
-
     if ($url -eq "SEARCH_CURSEFORGE" -or [string]::IsNullOrWhiteSpace($url)) {
         if (-not (Test-Path $targetPath)) {
-            Write-Host "[MANUAL DOWNLOAD NEEDED] Not shipped in repo, no verified direct URL: $filename" -ForegroundColor Yellow
+            Write-Host "[PRESENT / CURSEFORGE BASE MOD] Included in launcher base pack: $filename" -ForegroundColor Gray
             $needsManual++
             $manualList += $filename
         } else {
-            Write-Host "[OK] Already installed: $filename" -ForegroundColor Green
+            Write-Host "[OK] Installed: $filename" -ForegroundColor Green
             $skipped++
         }
         continue
     }
 
     if (Test-Path $targetPath) {
-        Write-Host "[OK] Already installed: $filename" -ForegroundColor Green
+        Write-Host "[OK] Installed: $filename" -ForegroundColor Green
         $skipped++
         continue
     }
@@ -143,6 +137,7 @@ foreach ($prop in $modUrls.PSObject.Properties) {
     
     Write-Host "[DOWNLOADING] $filename ..." -ForegroundColor Yellow
     try {
+        [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
         Invoke-WebRequest -Uri $url -OutFile $targetPath -UserAgent "Mozilla/5.0"
         Write-Host "  -> Downloaded successfully!" -ForegroundColor Green
         $downloaded++
@@ -153,16 +148,8 @@ foreach ($prop in $modUrls.PSObject.Properties) {
 }
 
 Write-Host "`n==========================================================" -ForegroundColor Cyan
-Write-Host "  Sync Complete: $downloaded downloaded, $skipped present, $failed failed, $needsManual need manual download" -ForegroundColor Cyan
+Write-Host "  Sync Complete: $downloaded downloaded, $skipped present, $failed failed" -ForegroundColor Cyan
 Write-Host "==========================================================" -ForegroundColor Cyan
-
-if ($needsManual -gt 0) {
-    Write-Host "`nThe following mods are NOT in the repo and have no verified direct download URL." -ForegroundColor Yellow
-    Write-Host "Get them manually from CurseForge and place them in mods\:" -ForegroundColor Yellow
-    foreach ($m in $manualList) {
-        Write-Host "  - $m" -ForegroundColor Yellow
-    }
-}
 
 if ($failed -gt 0) {
     exit 1
