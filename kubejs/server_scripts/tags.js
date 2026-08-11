@@ -56,6 +56,17 @@ ServerEvents.tags('item', allthemods => {
   // Create
   allthemods.remove('create:safe_nbt', ['create:clipboard'])
   allthemods.add('create:non_movable',['@sophisticatedstorage'])
+
+  // Dyenamics tags
+  const dyenamicsDyes = [
+    'mint', 'bubblegum', 'honey', 'rose', 'aquamarine', 'conifer',
+    'icy_blue', 'ultramarine', 'maroon', 'peach', 'wine', 'amber',
+    'lavender', 'navy', 'persimmon', 'cherenkov'
+  ];
+  dyenamicsDyes.forEach(color => {
+    allthemods.add('forge:dyes', `dyenamics:${color}_dye`);
+    allthemods.add(`forge:dyes/${color}`, `dyenamics:${color}_dye`);
+  });
 })
 
 ServerEvents.tags('block', allthemods => {
