@@ -24,6 +24,7 @@
 		ftbessentials.tpa: true
 		ftbessentials.rtp: true
 		ftbessentials.warp: true
+		command.fly: true
 		command.gamemode: true
 		command.give: true
 	}
@@ -33,5 +34,6 @@
 		condition: "op"
 		ftbranks.name_format: "&2{name}"
 		"ftbessentials.*": true
+		command.fly: true
 	}
 }
