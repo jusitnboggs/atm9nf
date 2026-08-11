@@ -1,6 +1,9 @@
-All The Mods 9 - No Frills
-======
-This is the official repository and issue-tracker for All The Mods 9 No Frills
+# All The Mods 9 - No Frills (Custom Fork)
+
+> [!NOTE]
+> This repository is a **custom community fork** of *All The Mods 9 - No Frills* maintained by [jusitnboggs](https://github.com/jusitnboggs). It is **not** the official upstream ATM team repository.
+
+This fork enhances the base pack with additional mods (ProjectE, AutoEMC, Avaritia addons, AE2 expansions), custom ProjectE EMC conversion mappers, and custom pack tweaks.
 
 ## Setup & Cloning Instructions
 
@@ -14,9 +17,24 @@ To sync this customized pack directly into your Prism Launcher instance:
 4. Run the following command to clone this repository into your folder:
 
 ```bash
-git clone https://github.com/jusitnboggs/atm9nf.git .
 ```
-> **Note:** Make sure to include the `.` at the end so Git clones the contents directly into your `minecraft` directory instead of creating a subfolder.
+5. Run **`download_mods.bat`** (or `scripts/download_mods.ps1`) to automatically sync and download all added or updated mod `.jar` files for this customized fork.
+
+---
+
+## Customized Features in this Fork
+
+- **ProjectE & AutoEMC Integration**: Full EMC pricing support with custom `pe_custom_conversions` for:
+  - Rechiseled & Rechiseled AE blocks
+  - Chipped decorative variants
+  - Croptopia food crafting fixes
+  - Sophisticated Storage chest/barrel tier upgrades
+  - Thermal Expansion & Thermal Extra press dies and materials
+  - ComputerCraft turtles, Torchmaster Megatorch, and utility blocks
+- **Added Mods & Expansions**: ProjectE, AutoEMC, ProjectCell, ProjectExpansion, Avaritia addons, Applied Energistics 2 expansions, and more.
+- **Automated Mod Downloader**: Built-in script (`download_mods.bat`) to keep added and updated mods in sync.
+
+---
 
 Does "All The Mods" *really* contain ALL THE MODS? No, of course not.
 
