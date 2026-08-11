@@ -92,3 +92,8 @@ The following mods and dependencies were ported over from the main ATM9 instance
 - amendments-1.20-2.2.3.jar (updated)
 - waystones-forge-1.20.1-14.1.17.jar (updated)
 - ars_creo-1.20.1-4.3.0.jar (updated)
+- Ad-Astra-Giselle-Addon-forge-1.20.1-6.20.jar (updated)
+- AdvancedAE-1.2.7-1.20.1.jar (updated)
+- AEAdditions-1.20.1-5.1.0.jar (updated)
+- industrial-foregoing-1.20.1-3.5.22.jar (updated)
+- industrial-foregoing-souls-1.20.1-1.0.9.jar (updated)
