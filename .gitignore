@@ -28,6 +28,6 @@ observable_announce
 mods_list.csv
 
 # Mods directory - ignore all downloaded mods, keep ONLY custom patched jars
-mods/
+mods/*
 !mods/appliede-0.14.7-fix2.jar
 !mods/Re-Avaritia_Ad Astra Oxygen Patch.jar
