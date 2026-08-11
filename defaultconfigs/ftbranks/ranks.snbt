@@ -24,6 +24,8 @@
 		ftbessentials.tpa: true
 		ftbessentials.rtp: true
 		ftbessentials.warp: true
+		command.gamemode: true
+		command.give: true
 	}
 	admin: {
 		name: "Admin"
