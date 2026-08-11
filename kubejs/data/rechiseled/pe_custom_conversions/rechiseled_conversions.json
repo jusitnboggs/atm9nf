@@ -1,0 +1,8489 @@
+{
+  "comment": "Custom EMC conversion mappings for Rechiseled and Rechiseled AE blocks, slabs, and stairs to map them directly to their base material blocks.",
+  "conversion": [
+    {
+      "output": "rechiseled:amethyst_block_beams",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_beams_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_beams_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_beams_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_beams_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_beams_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_bordered_diagonal_tiles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_bordered_diagonal_tiles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_bordered_diagonal_tiles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_bordered_diagonal_tiles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_bordered_diagonal_tiles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_bordered_diagonal_tiles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_bricks",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_bricks_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_bricks_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_bricks_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_bricks_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_bricks_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_cut",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_cut_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_cut_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_cut_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_cut_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_cut_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_diagonal_tiles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_diagonal_tiles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_diagonal_tiles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_edged",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_edged_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_edged_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_edged_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_edged_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_edged_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_jewel",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_jewel_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_jewel_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_pillar",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_pillar_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_pillar_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_pillar_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_pillar_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_pillar_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_polished",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_polished_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_polished_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_polished_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_polished_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_polished_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_shiny",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_shiny_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_shiny_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_shiny_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_shiny_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_shiny_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_smooth",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_smooth_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_smooth_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_tiles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_tiles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_tiles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_tiles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_tiles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:amethyst_block_tiles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:amethyst_block"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_beams",
+      "count": 1,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_beams_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_beams_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_beams_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_beams_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_beams_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_bordered",
+      "count": 1,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_bordered_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_bordered_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_bordered_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_bordered_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_bordered_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_bordered_polished",
+      "count": 1,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_bordered_polished_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_bordered_polished_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_bordered_polished_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_bordered_polished_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_bordered_polished_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_bricks",
+      "count": 1,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_bricks_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_bricks_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_bricks_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_bricks_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_bricks_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_chiseled_piglin",
+      "count": 1,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_chiseled_piglin_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_chiseled_piglin_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_diagonal_tiles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_diagonal_tiles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_diagonal_tiles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_diagonal_tiles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_diagonal_tiles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_diagonal_tiles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_pattern",
+      "count": 1,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_pattern_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_pattern_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_pattern_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_pattern_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_pattern_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_patterned",
+      "count": 1,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_patterned_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_patterned_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_patterned_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_patterned_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_patterned_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_tiles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_tiles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_tiles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_tiles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_tiles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:basalt_tiles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:basalt"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_bordered",
+      "count": 1,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_bordered_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_bordered_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_bordered_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_bordered_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_bordered_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_bricks",
+      "count": 1,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_bricks_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_bricks_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_bricks_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_bricks_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_bricks_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_chiseled",
+      "count": 1,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_chiseled_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_chiseled_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_chiseled_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_chiseled_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_chiseled_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_cone",
+      "count": 1,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_cone_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_cone_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_cracked",
+      "count": 1,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_cracked_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_cracked_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_patterned",
+      "count": 1,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_patterned_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_patterned_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_patterned_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_patterned_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_patterned_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_pillar",
+      "count": 1,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_pillar_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_pillar_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_pillar_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_pillar_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_pillar_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_rocky",
+      "count": 1,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_rocky_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_rocky_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_slanted_tiles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_slanted_tiles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_slanted_tiles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_slanted_tiles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_slanted_tiles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_slanted_tiles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_tiles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_tiles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_tiles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_tiles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_tiles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:blue_ice_tiles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:blue_ice"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_carved",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_carved_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_carved_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_carved_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_carved_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_carved_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_chiseled",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_chiseled_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_chiseled_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_chiseled_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_chiseled_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_chiseled_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_circles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_circles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_circles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_circles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_circles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_circles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_compacted",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_compacted_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_compacted_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_compacted_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_compacted_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_compacted_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_ovals",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_ovals_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_ovals_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_ovals_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_ovals_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_ovals_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_pattern",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_pattern_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_pattern_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_pattern_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_pattern_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_pattern_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_pillar",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_pillar_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_pillar_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_pillar_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_pillar_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_pillar_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_polished",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_polished_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_polished_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_rotated_bricks",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_rotated_bricks_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_rotated_bricks_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_rotated_bricks_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_rotated_bricks_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_rotated_bricks_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_small_tiles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_small_tiles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_small_tiles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_small_tiles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_small_tiles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_small_tiles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_stripes",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_stripes_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_stripes_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_stripes_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_stripes_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:coal_block_stripes_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:coal_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_bars",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_bars_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_bars_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_bars_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_bars_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_bars_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_circles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_circles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_circles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_circles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_circles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_circles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_cone",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_cone_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_cone_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_gears",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_gears_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_gears_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_gears_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_gears_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_gears_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_lines",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_lines_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_lines_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_lines_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_lines_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_lines_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_pattern",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_pattern_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_pattern_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_pattern_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_pattern_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_pattern_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_pillar",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_pillar_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_pillar_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_pillar_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_pillar_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_pillar_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_polished",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_polished_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_polished_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_polished_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_polished_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_polished_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_shafts",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_shafts_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_shafts_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_shafts_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_shafts_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_shafts_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_small_bricks",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_small_bricks_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_small_bricks_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_small_bricks_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_small_bricks_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_small_bricks_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_smooth",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_smooth_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:copper_block_smooth_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:copper_block"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_beams",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_beams_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_beams_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_beams_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_beams_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_beams_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_brick_paving",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_brick_paving_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_brick_paving_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_brick_paving_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_brick_paving_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_brick_paving_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_bricks",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_bricks_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_bricks_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_bricks_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_bricks_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_bricks_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_dotted",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_dotted_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_dotted_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_dotted_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_dotted_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_dotted_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_fabric",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_fabric_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_fabric_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_fabric_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_fabric_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_fabric_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_large_tiles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_large_tiles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_large_tiles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_large_tiles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_large_tiles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_large_tiles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_rotated_bricks",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_rotated_bricks_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_rotated_bricks_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_rotated_bricks_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_rotated_bricks_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_rotated_bricks_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_rows",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_rows_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_rows_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_rows_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_rows_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_rows_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_squares",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_squares_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_squares_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_squares_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_squares_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_squares_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_tiles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_tiles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_tiles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_tiles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_tiles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_tiles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_wavy",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_wavy_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_wavy_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_wavy_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_wavy_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_wavy_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_woven",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_woven_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_woven_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_woven_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_woven_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dark_prismarine_woven_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dark_prismarine"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_blobs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_blobs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_blobs_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_blobs_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_blobs_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_blobs_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_bricks",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_bricks_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_bricks_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_bricks_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_bricks_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_bricks_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_chunks",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_chunks_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_chunks_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_chunks_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_chunks_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_chunks_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_clumps",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_clumps_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_clumps_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_clumps_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_clumps_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_clumps_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_cobbled",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_cobbled_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_cobbled_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_grooves",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_grooves_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_grooves_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_large_tiles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_large_tiles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_large_tiles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_large_tiles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_large_tiles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_large_tiles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_muddy",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_muddy_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_muddy_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_small_bricks",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_small_bricks_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_small_bricks_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_small_bricks_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_small_bricks_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_small_bricks_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_small_tiles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_small_tiles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_small_tiles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_small_tiles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_small_tiles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_small_tiles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_smooth_clumps",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_smooth_clumps_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_smooth_clumps_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_smooth_clumps_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_smooth_clumps_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_smooth_clumps_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_soil",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_soil_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_soil_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_soil_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_soil_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_soil_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_squares",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_squares_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_squares_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_squares_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_squares_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_squares_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_tiles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_tiles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_tiles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_tiles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_tiles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_tiles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_tilled",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_tilled_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_tilled_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_tilled_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_tilled_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:dirt_tilled_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:dirt"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_bordered_crosses",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_bordered_crosses_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_bordered_crosses_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_bordered_crosses_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_bordered_crosses_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_bordered_crosses_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_bordered_plating",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_bordered_plating_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_bordered_plating_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_bordered_plating_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_bordered_plating_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_bordered_plating_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_chiseled",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_chiseled_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_chiseled_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_chiseled_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_chiseled_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_chiseled_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_clovers",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_clovers_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_clovers_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_clovers_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_clovers_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_clovers_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_crosses",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_crosses_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_crosses_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_crystal",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_crystal_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_crystal_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_crystal_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_crystal_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_crystal_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_patterned",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_patterned_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_patterned_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_patterned_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_patterned_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_patterned_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_patterned_squares",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_patterned_squares_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_patterned_squares_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_patterned_squares_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_patterned_squares_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_patterned_squares_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_pillar",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_pillar_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_pillar_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_pillar_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_pillar_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_pillar_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_plating",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_plating_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_plating_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_polished",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_polished_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_polished_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_polished_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_polished_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_polished_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_smooth",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_smooth_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_smooth_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_striped",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_striped_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_striped_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_striped_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_striped_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_striped_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_waxed",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_waxed_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_waxed_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_waxed_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_waxed_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "rechiseled:emerald_block_waxed_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:emerald_block"
+      ]
+    },
+    {
+      "output": "minecraft:end_stone_bricks",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "minecraft:end_stone_brick_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "minecraft:end_stone_brick_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_blobs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_blobs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_blobs_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_blobs_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_blobs_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_blobs_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_brick_pattern",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_brick_pattern_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_brick_pattern_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_brick_pattern_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_brick_pattern_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_brick_pattern_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_brick_paving",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_brick_paving_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_brick_paving_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_brick_paving_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_brick_paving_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_brick_paving_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_chiseled",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_chiseled_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_chiseled_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_chiseled_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_chiseled_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_chiseled_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_crushed",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_crushed_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_crushed_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_crushed_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_crushed_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_crushed_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_diagonal_bricks",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_diagonal_bricks_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_diagonal_bricks_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_diagonal_bricks_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_diagonal_bricks_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_diagonal_bricks_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_mesh",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_mesh_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_mesh_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_mesh_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_mesh_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_mesh_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_paving",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_paving_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_paving_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_paving_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_paving_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_paving_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_polished",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_polished_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_polished_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_polished_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_polished_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_polished_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_rotated_bricks",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_rotated_bricks_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_rotated_bricks_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_rotated_bricks_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_rotated_bricks_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_rotated_bricks_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_scales",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_scales_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_scales_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_scales_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_scales_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_scales_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_small_tiles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_small_tiles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_small_tiles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_small_tiles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_small_tiles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_small_tiles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_spiral_pattern",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_spiral_pattern_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_spiral_pattern_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_spiral_pattern_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_spiral_pattern_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_spiral_pattern_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_squares",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_squares_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_squares_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_squares_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_squares_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_squares_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_tiles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_tiles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_tiles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_tiles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_tiles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:end_stone_tiles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:end_stone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_brick_pattern",
+      "count": 1,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_brick_pattern_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_brick_pattern_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_brick_pattern_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_brick_pattern_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_brick_pattern_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_brick_paving",
+      "count": 1,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_brick_paving_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_brick_paving_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_brick_paving_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_brick_paving_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_brick_paving_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_bricks",
+      "count": 1,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_bricks_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_bricks_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_bricks_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_bricks_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_bricks_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_crushed",
+      "count": 1,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_crushed_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_crushed_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_crushed_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_crushed_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_crushed_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_large_tiles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_large_tiles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_large_tiles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_large_tiles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_large_tiles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_large_tiles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_rotated_bricks",
+      "count": 1,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_rotated_bricks_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_rotated_bricks_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_rotated_bricks_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_rotated_bricks_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_rotated_bricks_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_small_tiles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_small_tiles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_small_tiles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_small_tiles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_small_tiles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_small_tiles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_smooth",
+      "count": 1,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_smooth_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_smooth_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_smooth_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_smooth_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_smooth_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_tiles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_tiles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_tiles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_tiles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_tiles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:glowstone_tiles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:glowstone"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_beams",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_beams_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_beams_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_beams_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_beams_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_beams_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_bordered",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_bordered_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_bordered_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_bordered_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_bordered_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_bordered_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_lines",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_lines_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_lines_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_lines_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_lines_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_lines_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_pattern",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_pattern_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_pattern_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_pattern_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_pattern_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_pattern_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_polished",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_polished_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_polished_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_polished_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_polished_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_polished_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_scales",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_scales_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_scales_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_scales_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_scales_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_scales_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_small_bricks",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_small_bricks_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_small_bricks_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_small_bricks_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_small_bricks_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_small_bricks_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_small_tiles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_small_tiles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_small_tiles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_small_tiles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_small_tiles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_small_tiles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_striped",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_striped_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_striped_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_striped_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_striped_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_striped_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_smooth",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_smooth_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_smooth_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_tiles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_tiles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_tiles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_tiles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_tiles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:gold_block_tiles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:gold_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_beams",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_beams_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_beams_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_beams_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_beams_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_beams_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_bricks",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_bricks_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_bricks_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_bricks_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_bricks_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_bricks_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_chiseled",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_chiseled_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_chiseled_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_chiseled_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_chiseled_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_chiseled_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_compacted",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_compacted_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_compacted_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_compacted_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_compacted_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_compacted_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_decorated",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_decorated_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_decorated_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_decorated_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_decorated_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_decorated_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_diagonal_tiles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_diagonal_tiles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_diagonal_tiles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_diagonal_tiles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_diagonal_tiles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_diagonal_tiles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_indented",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_indented_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_indented_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_indented_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_indented_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_indented_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_meteoric",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_meteoric_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_meteoric_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_patterned",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_patterned_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_patterned_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_patterned_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_patterned_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_patterned_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_pillar",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_pillar_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_pillar_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_pillar_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_pillar_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_pillar_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_small_tiles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_small_tiles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_small_tiles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_small_tiles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_small_tiles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_small_tiles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_smooth",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_smooth_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherite_block_smooth_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherite_block"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_beams",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_beams_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_beams_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_beams_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_beams_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_beams_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_brick_pattern",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_brick_pattern_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_brick_pattern_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_brick_pattern_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_brick_pattern_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_brick_pattern_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_brick_paving",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_brick_paving_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_brick_paving_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_brick_paving_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_brick_paving_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_brick_paving_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_bricks",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_bricks_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_bricks_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_bricks_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_bricks_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_bricks_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_dented",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_dented_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_dented_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_dented_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_dented_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_dented_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_rotated_bricks",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_rotated_bricks_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_rotated_bricks_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_rotated_bricks_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_rotated_bricks_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_rotated_bricks_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_small_tiles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_small_tiles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_small_tiles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_small_tiles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_small_tiles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_small_tiles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_stripes",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_stripes_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_stripes_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_stripes_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_stripes_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_stripes_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_tiles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_tiles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_tiles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_tiles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_tiles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:netherrack_tiles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:netherrack"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_bordered",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_bordered_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_bordered_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_bordered_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_bordered_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_bordered_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_brick_pattern",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_brick_pattern_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_brick_pattern_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_brick_pattern_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_brick_pattern_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_brick_pattern_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_brick_paving",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_brick_paving_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_brick_paving_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_brick_paving_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_brick_paving_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_brick_paving_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_bricks",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_bricks_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_bricks_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_bricks_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_bricks_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_bricks_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_chiseled",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_chiseled_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_chiseled_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_chiseled_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_chiseled_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_chiseled_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_chiseled_circles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_chiseled_circles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_chiseled_circles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_chiseled_circles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_chiseled_circles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_chiseled_circles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_chiseled_creeper",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_chiseled_creeper_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_chiseled_creeper_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_chiseled_skeleton",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_chiseled_skeleton_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_chiseled_skeleton_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_dark",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_dark_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_dark_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_dark_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_dark_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_dark_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_large_tiles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_large_tiles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_large_tiles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_pillars",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_pillars_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_pillars_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_pillars_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_pillars_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_pillars_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_rotated_bricks",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_rotated_bricks_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_rotated_bricks_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_rotated_bricks_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_rotated_bricks_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_rotated_bricks_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_spots",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_spots_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_spots_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_spots_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_spots_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_spots_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_squares",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_squares_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_squares_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_squares_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_squares_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_squares_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_stripes",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_stripes_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_stripes_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_stripes_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_stripes_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_stripes_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_tiles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_tiles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_tiles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_tiles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_tiles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:obsidian_tiles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:obsidian"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_brick_pattern",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_brick_pattern_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_brick_pattern_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_brick_pattern_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_brick_pattern_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_brick_pattern_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_brick_paving",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_brick_paving_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_brick_paving_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_brick_paving_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_brick_paving_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_brick_paving_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_bricks",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_bricks_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_bricks_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_bricks_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_bricks_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_bricks_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_diagonal_bricks",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_diagonal_bricks_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_diagonal_bricks_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_diagonal_bricks_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_diagonal_bricks_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_diagonal_bricks_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_diagonal_tiles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_diagonal_tiles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_diagonal_tiles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_diagonal_tiles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_diagonal_tiles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_diagonal_tiles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_dotted",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_dotted_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_dotted_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_dotted_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_dotted_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_dotted_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_fabric",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_fabric_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_fabric_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_fabric_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_fabric_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_fabric_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_jagged_pattern",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_jagged_pattern_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_jagged_pattern_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_jagged_pattern_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_jagged_pattern_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_jagged_pattern_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_large_tiles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_large_tiles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_large_tiles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_large_tiles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_large_tiles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_large_tiles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_organic_pattern",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_organic_pattern_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_organic_pattern_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_organic_pattern_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_organic_pattern_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_organic_pattern_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_pillar",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_pillar_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_pillar_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_pillar_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_pillar_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_pillar_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_rotated_bricks",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_rotated_bricks_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_rotated_bricks_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_rotated_bricks_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_rotated_bricks_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_rotated_bricks_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_slanted_tiles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_slanted_tiles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_slanted_tiles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_slanted_tiles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_slanted_tiles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_slanted_tiles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_small_tiles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_small_tiles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_small_tiles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_small_tiles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_small_tiles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_small_tiles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_spiral_pattern",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_spiral_pattern_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_spiral_pattern_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_spiral_pattern_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_spiral_pattern_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_spiral_pattern_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_squares",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_squares_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_squares_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_squares_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_squares_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_squares_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "minecraft:purpur_block",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_tiles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "minecraft:purpur_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_tiles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "minecraft:purpur_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_tiles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_woven",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_woven_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_woven_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_woven_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_woven_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "rechiseled:purpur_woven_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:purpur_pillar"
+      ]
+    },
+    {
+      "output": "minecraft:smooth_quartz",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "minecraft:smooth_quartz_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "minecraft:smooth_quartz_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_bordered",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_bordered_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_bordered_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_bordered_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_bordered_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_bordered_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_brick_paving",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_brick_paving_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_brick_paving_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_brick_paving_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_brick_paving_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_brick_paving_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_chiseled_pillar",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_chiseled_pillar_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_chiseled_pillar_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_chiseled_pillar_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_chiseled_pillar_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_chiseled_pillar_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_chiseled_squares",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_chiseled_squares_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_chiseled_squares_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "minecraft:quartz_block",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_connecting_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "minecraft:quartz_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_connecting_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "minecraft:quartz_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_connecting_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_crosses",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_crosses_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_crosses_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_crosses_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_crosses_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_crosses_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_diagonal_tiles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_diagonal_tiles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_diagonal_tiles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_diagonal_tiles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_diagonal_tiles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_diagonal_tiles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_pattern",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_pattern_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_pattern_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_pattern_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_pattern_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_pattern_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_rotated_bricks",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_rotated_bricks_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_rotated_bricks_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_rotated_bricks_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_rotated_bricks_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_rotated_bricks_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_rows",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_rows_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_rows_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_rows_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_rows_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_rows_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_scales",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_scales_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_scales_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_scales_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_scales_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_scales_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_small_tiles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_small_tiles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_small_tiles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_small_tiles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_small_tiles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_small_tiles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_squares",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_squares_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_squares_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_squares_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_squares_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_squares_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_stripes",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_stripes_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_stripes_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_stripes_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_stripes_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_stripes_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_tiles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_tiles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_tiles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_tiles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_tiles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:quartz_block_tiles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:quartz_bricks"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_bordered",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_bordered_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_bordered_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_bordered_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_bordered_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_bordered_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_bricks",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_bricks_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_bricks_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_bricks_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_bricks_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_bricks_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_brick_bordered",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_brick_bordered_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_brick_bordered_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_chiseled_clovers",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_chiseled_clovers_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_chiseled_clovers_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_chiseled_clovers_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_chiseled_clovers_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_chiseled_clovers_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_circles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_circles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_circles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_circles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_circles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_circles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_compressed",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_compressed_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_compressed_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_compressed_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_compressed_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_compressed_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_crushed",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_crushed_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_crushed_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_diagonal_tiles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_diagonal_tiles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_diagonal_tiles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_diagonal_tiles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_diagonal_tiles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_diagonal_tiles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_patterned",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_patterned_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_patterned_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_patterned_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_patterned_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_patterned_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_paving",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_paving_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_paving_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_paving_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_paving_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_paving_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_pillar",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_pillar_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_pillar_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_pillar_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_pillar_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_pillar_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_polished",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_polished_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_polished_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_polished_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_polished_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_polished_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_scales",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_scales_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_scales_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_scales_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_scales_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_scales_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_small_tiles",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_small_tiles_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_small_tiles_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_small_tiles_stairs_connecting",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_small_tiles_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_small_tiles_slab_connecting",
+      "count": 2,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_smooth",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_smooth_stairs",
+      "count": 1,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    },
+    {
+      "output": "rechiseled:redstone_block_smooth_slab",
+      "count": 2,
+      "ingredients": [
+        "minecraft:redstone_block"
+      ]
+    }
+  ]
+}

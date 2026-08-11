@@ -1,0 +1,140 @@
+{
+  "comment": "Custom EMC conversions for ComputerCraft turtles, Torchmaster Megatorch, Apotheosis Gem Cutting Table, Milk Jar, Charcoal Dust, Allthemodium Ore/Upgrades, Exchanger Cores, and misc utilities.",
+  "values": {
+    "before": {
+      "computercraft:computer_normal": 1856,
+      "computercraft:computer_advanced": 16448,
+      "allthemodium:allthemodium_ore": 122800
+    }
+  },
+  "conversion": [
+    {
+      "comment": "computercraft:turtle_normal = 7 iron ingots + 1 computer_normal + 1 chest",
+      "output": "computercraft:turtle_normal",
+      "count": 1,
+      "ingredients": [
+        "#forge:ingots/iron",
+        "#forge:ingots/iron",
+        "#forge:ingots/iron",
+        "#forge:ingots/iron",
+        "#forge:ingots/iron",
+        "#forge:ingots/iron",
+        "#forge:ingots/iron",
+        "computercraft:computer_normal",
+        "#forge:chests"
+      ]
+    },
+    {
+      "comment": "computercraft:turtle_advanced = 7 gold ingots + 1 computer_advanced + 1 chest",
+      "output": "computercraft:turtle_advanced",
+      "count": 1,
+      "ingredients": [
+        "#forge:ingots/gold",
+        "#forge:ingots/gold",
+        "#forge:ingots/gold",
+        "#forge:ingots/gold",
+        "#forge:ingots/gold",
+        "#forge:ingots/gold",
+        "#forge:ingots/gold",
+        "computercraft:computer_advanced",
+        "#forge:chests"
+      ]
+    },
+    {
+      "comment": "torchmaster:megatorch = 4 logs + 4 torches + 2 diamonds + 2 gold blocks",
+      "output": "torchmaster:megatorch",
+      "count": 1,
+      "ingredients": [
+        "#minecraft:logs",
+        "#minecraft:logs",
+        "minecraft:torch",
+        "minecraft:torch",
+        "minecraft:torch",
+        "minecraft:torch",
+        "#forge:gems/diamond",
+        "#forge:gems/diamond",
+        "#forge:storage_blocks/gold",
+        "#forge:storage_blocks/gold"
+      ]
+    },
+    {
+      "comment": "apotheosis:gem_cutting_table = 2 smooth stone + 2 iron ingots + 1 diamond + 1 shears + 1 crafting table",
+      "output": "apotheosis:gem_cutting_table",
+      "count": 1,
+      "ingredients": [
+        "minecraft:smooth_stone",
+        "minecraft:smooth_stone",
+        "#forge:ingots/iron",
+        "#forge:ingots/iron",
+        "#forge:gems/diamond",
+        "minecraft:shears",
+        "minecraft:crafting_table"
+      ]
+    },
+    {
+      "comment": "cookingforblockheads:milk_jar = 7 glass + 1 milk bucket + 1 plank",
+      "output": "cookingforblockheads:milk_jar",
+      "count": 1,
+      "ingredients": [
+        "#forge:glass",
+        "#forge:glass",
+        "#forge:glass",
+        "#forge:glass",
+        "#forge:glass",
+        "#forge:glass",
+        "#forge:glass",
+        "#minecraft:planks",
+        "minecraft:milk_bucket"
+      ]
+    },
+    {
+      "comment": "mekanism:dust_charcoal = 1 charcoal",
+      "output": "mekanism:dust_charcoal",
+      "count": 1,
+      "ingredients": [
+        "minecraft:charcoal"
+      ]
+    },
+    {
+      "comment": "enderio:organic_black_dye = 2 charcoal dust + 1 slimeball",
+      "output": "enderio:organic_black_dye",
+      "count": 2,
+      "ingredients": [
+        "minecraft:charcoal",
+        "minecraft:charcoal",
+        "#forge:slimeballs"
+      ]
+    },
+    {
+      "comment": "ironfurnaces:upgrade_allthemodium = 4 allthemodium ingots + 4 allthemodium blocks + netherite upgrade",
+      "output": "ironfurnaces:upgrade_allthemodium",
+      "count": 1,
+      "ingredients": [
+        "#forge:ingots/allthemodium",
+        "#forge:ingots/allthemodium",
+        "#forge:ingots/allthemodium",
+        "#forge:ingots/allthemodium",
+        "#forge:storage_blocks/allthemodium",
+        "#forge:storage_blocks/allthemodium",
+        "#forge:storage_blocks/allthemodium",
+        "#forge:storage_blocks/allthemodium"
+      ]
+    },
+    {
+      "comment": "exchangers:exchanger_core_tier1 = 4 red dye + 4 logs + 1 ender pearl",
+      "output": "exchangers:exchanger_core_tier1",
+      "count": 1,
+      "ingredients": [
+        "#forge:dyes/red",
+        "#forge:dyes/red",
+        "#forge:dyes/red",
+        "#forge:dyes/red",
+        "#minecraft:logs",
+        "#minecraft:logs",
+        "#minecraft:logs",
+        "#minecraft:logs",
+        "#forge:ender_pearls"
+      ]
+    }
+  ]
+}

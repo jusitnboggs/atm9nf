@@ -1,0 +1,100 @@
+{
+  "comment": "Custom EMC conversions for Croptopia foods. Excludes kitchen tools (frying_pan, cooking_pot, food_press) from ingredient cost calculations.",
+  "values": {
+    "before": {
+      "croptopia:frying_pan": 0,
+      "croptopia:cooking_pot": 0,
+      "croptopia:food_press": 0
+    }
+  },
+  "conversion": [
+    {
+      "comment": "butter: milk + salt",
+      "output": "croptopia:butter",
+      "count": 1,
+      "ingredients": [
+        "#forge:milks",
+        "#forge:salts"
+      ]
+    },
+    {
+      "comment": "cheese: milk + salt",
+      "output": "croptopia:cheese",
+      "count": 1,
+      "ingredients": [
+        "#forge:milks",
+        "#forge:salts"
+      ]
+    },
+    {
+      "comment": "steamed_clams: butter + garlic + salt + pepper + 2x clam",
+      "output": "croptopia:steamed_clams",
+      "count": 2,
+      "ingredients": [
+        "#forge:butters",
+        "#forge:garlic",
+        "#forge:salts",
+        "croptopia:pepper",
+        "#forge:clams",
+        "#forge:clams"
+      ]
+    },
+    {
+      "comment": "steamed_crab: crab + water_bottle",
+      "output": "croptopia:steamed_crab",
+      "count": 1,
+      "ingredients": [
+        "#forge:crabs",
+        "#forge:water_bottles"
+      ]
+    },
+    {
+      "comment": "grilled_oysters: 2x oyster + cheese + lemon + garlic + salt",
+      "output": "croptopia:grilled_oysters",
+      "count": 2,
+      "ingredients": [
+        "#forge:oysters",
+        "#forge:oysters",
+        "#forge:cheeses",
+        "#forge:lemons",
+        "#forge:garlic",
+        "#forge:salts"
+      ]
+    },
+    {
+      "comment": "deep_fried_shrimp: 3x shrimp + egg + bread",
+      "output": "croptopia:deep_fried_shrimp",
+      "count": 2,
+      "ingredients": [
+        "#forge:shrimp",
+        "#forge:shrimp",
+        "#forge:shrimp",
+        "minecraft:egg",
+        "minecraft:bread"
+      ]
+    },
+    {
+      "comment": "fried_calamari: calamari + lemon + olive_oil + flour + sea_lettuce",
+      "output": "croptopia:fried_calamari",
+      "count": 2,
+      "ingredients": [
+        "#forge:calamari",
+        "#forge:lemons",
+        "#forge:olive_oils",
+        "#forge:flour",
+        "#forge:sea_lettuce"
+      ]
+    },
+    {
+      "comment": "anchovy_pizza: tomato + anchovy + cheese + dough",
+      "output": "croptopia:anchovy_pizza",
+      "count": 1,
+      "ingredients": [
+        "#forge:tomatoes",
+        "#forge:anchovies",
+        "#forge:cheeses",
+        "#forge:doughs"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "comment": "Custom EMC conversions for Thermal Expansion and Thermal Extra unresolved items (press dies, dragonsteel, item buffer, bitumen).",
+  "values": {
+    "before": {
+      "thermal_extra:ancient_dust": 2048,
+      "thermal:bitumen": 32
+    }
+  },
+  "conversion": [
+    {
+      "comment": "thermal_extra:dragonsteel_ingot = ancient_dust + netherite_scrap + nickel_ingot",
+      "output": "thermal_extra:dragonsteel_ingot",
+      "count": 1,
+      "ingredients": [
+        "thermal_extra:ancient_dust",
+        "minecraft:netherite_scrap",
+        "#forge:ingots/nickel"
+      ]
+    },
+    {
+      "comment": "thermal_extra:dragonsteel_rod = 1 dragonsteel_ingot produces 2 rods",
+      "output": "thermal_extra:dragonsteel_rod",
+      "count": 2,
+      "ingredients": [
+        "#forge:ingots/dragonsteel"
+      ]
+    },
+    {
+      "comment": "thermal:press_packing_3x3_die = 4 invar ingots",
+      "output": "thermal:press_packing_3x3_die",
+      "count": 1,
+      "ingredients": [
+        "#forge:ingots/invar",
+        "#forge:ingots/invar",
+        "#forge:ingots/invar",
+        "#forge:ingots/invar"
+      ]
+    },
+    {
+      "comment": "thermal:press_packing_2x2_die = 4 invar ingots",
+      "output": "thermal:press_packing_2x2_die",
+      "count": 1,
+      "ingredients": [
+        "#forge:ingots/invar",
+        "#forge:ingots/invar",
+        "#forge:ingots/invar",
+        "#forge:ingots/invar"
+      ]
+    },
+    {
+      "comment": "thermal:press_unpacking_die = 4 invar ingots",
+      "output": "thermal:press_unpacking_die",
+      "count": 1,
+      "ingredients": [
+        "#forge:ingots/invar",
+        "#forge:ingots/invar",
+        "#forge:ingots/invar",
+        "#forge:ingots/invar"
+      ]
+    },
+    {
+      "comment": "thermal:item_buffer = 2 iron ingots + 2 chests + 1 redstone",
+      "output": "thermal:item_buffer",
+      "count": 1,
+      "ingredients": [
+        "#forge:ingots/iron",
+        "#forge:ingots/iron",
+        "#forge:chests",
+        "#forge:chests",
+        "#forge:dusts/redstone"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "comment": "Custom EMC conversions for Sophisticated Storage chests, barrels, limited barrels, and shulker boxes to bridge tier upgrade recipes into ProjectE.",
+  "conversion": [
+    {
+      "comment": "Iron Chest",
+      "output": "sophisticatedstorage:iron_chest",
+      "count": 1,
+      "ingredients": [
+        "sophisticatedstorage:chest",
+        "#forge:ingots/iron",
+        "#forge:ingots/iron",
+        "#forge:ingots/iron",
+        "#forge:ingots/iron",
+        "#forge:ingots/iron",
+        "#forge:ingots/iron",
+        "#forge:ingots/iron",
+        "#forge:ingots/iron"
+      ]
+    },
+    {
+      "comment": "Gold Chest",
+      "output": "sophisticatedstorage:gold_chest",
+      "count": 1,
+      "ingredients": [
+        "sophisticatedstorage:iron_chest",
+        "#forge:ingots/gold",
+        "#forge:ingots/gold",
+        "#forge:ingots/gold",
+        "#forge:ingots/gold",
+        "#forge:ingots/gold",
+        "#forge:ingots/gold",
+        "#forge:ingots/gold",
+        "#forge:ingots/gold"
+      ]
+    },
+    {
+      "comment": "Diamond Chest",
+      "output": "sophisticatedstorage:diamond_chest",
+      "count": 1,
+      "ingredients": [
+        "sophisticatedstorage:gold_chest",
+        "#forge:gems/diamond",
+        "#forge:gems/diamond",
+        "#forge:gems/diamond",
+        "#forge:gems/diamond",
+        "#forge:gems/diamond",
+        "#forge:gems/diamond",
+        "#forge:gems/diamond",
+        "#forge:gems/diamond"
+      ]
+    },
+    {
+      "comment": "Netherite Chest",
+      "output": "sophisticatedstorage:netherite_chest",
+      "count": 1,
+      "ingredients": [
+        "sophisticatedstorage:diamond_chest",
+        "#forge:ingots/netherite"
+      ]
+    },
+    {
+      "comment": "Copper Chest",
+      "output": "sophisticatedstorage:copper_chest",
+      "count": 1,
+      "ingredients": [
+        "sophisticatedstorage:chest",
+        "#forge:ingots/copper",
+        "#forge:ingots/copper",
+        "#forge:ingots/copper",
+        "#forge:ingots/copper",
+        "#forge:ingots/copper",
+        "#forge:ingots/copper",
+        "#forge:ingots/copper",
+        "#forge:ingots/copper"
+      ]
+    },
+    {
+      "comment": "Iron Barrel",
+      "output": "sophisticatedstorage:iron_barrel",
+      "count": 1,
+      "ingredients": [
+        "sophisticatedstorage:barrel",
+        "#forge:ingots/iron",
+        "#forge:ingots/iron",
+        "#forge:ingots/iron",
+        "#forge:ingots/iron",
+        "#forge:ingots/iron",
+        "#forge:ingots/iron",
+        "#forge:ingots/iron",
+        "#forge:ingots/iron"
+      ]
+    },
+    {
+      "comment": "Gold Barrel",
+      "output": "sophisticatedstorage:gold_barrel",
+      "count": 1,
+      "ingredients": [
+        "sophisticatedstorage:iron_barrel",
+        "#forge:ingots/gold",
+        "#forge:ingots/gold",
+        "#forge:ingots/gold",
+        "#forge:ingots/gold",
+        "#forge:ingots/gold",
+        "#forge:ingots/gold",
+        "#forge:ingots/gold",
+        "#forge:ingots/gold"
+      ]
+    },
+    {
+      "comment": "Diamond Barrel",
+      "output": "sophisticatedstorage:diamond_barrel",
+      "count": 1,
+      "ingredients": [
+        "sophisticatedstorage:gold_barrel",
+        "#forge:gems/diamond",
+        "#forge:gems/diamond",
+        "#forge:gems/diamond",
+        "#forge:gems/diamond",
+        "#forge:gems/diamond",
+        "#forge:gems/diamond",
+        "#forge:gems/diamond",
+        "#forge:gems/diamond"
+      ]
+    },
+    {
+      "comment": "Netherite Barrel",
+      "output": "sophisticatedstorage:netherite_barrel",
+      "count": 1,
+      "ingredients": [
+        "sophisticatedstorage:diamond_barrel",
+        "#forge:ingots/netherite"
+      ]
+    },
+    {
+      "comment": "Copper Barrel",
+      "output": "sophisticatedstorage:copper_barrel",
+      "count": 1,
+      "ingredients": [
+        "sophisticatedstorage:barrel",
+        "#forge:ingots/copper",
+        "#forge:ingots/copper",
+        "#forge:ingots/copper",
+        "#forge:ingots/copper",
+        "#forge:ingots/copper",
+        "#forge:ingots/copper",
+        "#forge:ingots/copper",
+        "#forge:ingots/copper"
+      ]
+    },
+    {
+      "comment": "Limited Barrel 1",
+      "output": "sophisticatedstorage:limited_barrel_1",
+      "count": 1,
+      "ingredients": [
+        "#minecraft:planks",
+        "#minecraft:planks",
+        "#minecraft:planks",
+        "#minecraft:planks",
+        "#minecraft:planks",
+        "minecraft:redstone_torch",
+        "#minecraft:wooden_slabs"
+      ]
+    },
+    {
+      "comment": "Limited Barrel 2",
+      "output": "sophisticatedstorage:limited_barrel_2",
+      "count": 1,
+      "ingredients": [
+        "#minecraft:planks",
+        "#minecraft:planks",
+        "#minecraft:planks",
+        "#minecraft:planks",
+        "#minecraft:planks",
+        "#minecraft:planks",
+        "minecraft:redstone_torch",
+        "#minecraft:wooden_slabs",
+        "#minecraft:wooden_slabs"
+      ]
+    },
+    {
+      "comment": "Limited Barrel 3",
+      "output": "sophisticatedstorage:limited_barrel_3",
+      "count": 1,
+      "ingredients": [
+        "#minecraft:planks",
+        "#minecraft:planks",
+        "#minecraft:planks",
+        "#minecraft:planks",
+        "minecraft:redstone_torch",
+        "#minecraft:wooden_slabs",
+        "#minecraft:wooden_slabs",
+        "#minecraft:wooden_slabs"
+      ]
+    },
+    {
+      "comment": "Limited Barrel 4",
+      "output": "sophisticatedstorage:limited_barrel_4",
+      "count": 1,
+      "ingredients": [
+        "#minecraft:planks",
+        "#minecraft:planks",
+        "#minecraft:planks",
+        "#minecraft:planks",
+        "minecraft:redstone_torch",
+        "#minecraft:wooden_slabs",
+        "#minecraft:wooden_slabs",
+        "#minecraft:wooden_slabs",
+        "#minecraft:wooden_slabs"
+      ]
+    }
+  ]
+}
