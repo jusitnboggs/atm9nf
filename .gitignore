@@ -8,3 +8,26 @@ journeymap/
 ftbquests/
 ftbteams/
 serverconfig/
+
+# Minecraft client runtime files
+.mixin.out/
+ESM/
+local/
+modernfix/
+resourcepacks/
+shaderpacks/
+simplebackups/
+options.txt
+keys.txt
+usercache.json
+usernamecache.json
+patchouli_data.json
+ds_private_storage.json
+rhino.local.properties
+observable_announce
+mods_list.csv
+
+# Mods directory - ignore all downloaded mods, keep ONLY custom patched jars
+mods/
+!mods/appliede-0.14.7-fix2.jar
+!mods/Re-Avaritia_Ad Astra Oxygen Patch.jar
