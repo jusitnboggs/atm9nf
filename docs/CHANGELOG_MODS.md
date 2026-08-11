@@ -78,3 +78,5 @@ The following mods and dependencies were ported over from the main ATM9 instance
 - wcwt-1.20.1.7-hotfix.jar
 - ldlib-forge-1.20.1-1.0.45.jar
 - guideme-20.1.13.jar
+- createaddition-1.20.1-1.3.2.jar (updated)
+- createoreexcavation-1.20-1.6.4.jar (updated)
