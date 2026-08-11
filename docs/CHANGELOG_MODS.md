@@ -97,3 +97,5 @@ The following mods and dependencies were ported over from the main ATM9 instance
 - AEAdditions-1.20.1-5.1.0.jar (updated)
 - industrial-foregoing-1.20.1-3.5.22.jar (updated)
 - industrial-foregoing-souls-1.20.1-1.0.9.jar (updated)
+- moonlight-1.20-2.16.14-forge.jar (updated)
+- supplementaries-1.20-3.1.40.jar (updated)
