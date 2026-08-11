@@ -55,5 +55,7 @@
   "megacells-forge-2.4.6-1.20.1.jar": "SEARCH_CURSEFORGE",
   "logisticspipes-0.0.2.jar": "SEARCH_CURSEFORGE",
   "wcwt-1.20.1.7-hotfix.jar": "SEARCH_CURSEFORGE",
-  "ProjectMinimapHud-neoforge-1.20.1-v1.0.0.jar": "SEARCH_CURSEFORGE"
+  "ProjectMinimapHud-neoforge-1.20.1-v1.0.0.jar": "SEARCH_CURSEFORGE",
+  "BloodMagic-1.18-1.20.1-3.3.8-50.jar": "https://cdn.modrinth.com/data/PbNc6qBY/versions/1YxwR16I/BloodMagic-1.18-1.20.1-3.3.8-50.jar",
+  "ad_astra-forge-1.20.1-1.15.20.jar": "https://cdn.modrinth.com/data/3ufwT9JF/versions/Qf7QFXk2/ad_astra-forge-1.20.1-1.15.20.jar"
 }
