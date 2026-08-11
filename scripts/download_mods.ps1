@@ -71,14 +71,14 @@ foreach ($prop in $modUrls.PSObject.Properties) {
     $url = $prop.Value
     $targetPath = Join-Path $modsDir $filename
     
-    if (Test-Path $targetPath) {
-        Write-Host "[OK] Already installed: $filename" -ForegroundColor Green
+    if ($url -eq "LOCAL_CUSTOM" -or $url -eq "SEARCH_CURSEFORGE" -or [string]::IsNullOrWhiteSpace($url)) {
+        Write-Host "[SKIP] Local/Custom mod (shipped in repo): $filename" -ForegroundColor Gray
         $skipped++
         continue
     }
     
-    if ($url -eq "LOCAL_CUSTOM" -or $url -eq "SEARCH_CURSEFORGE" -or [string]::IsNullOrWhiteSpace($url)) {
-        Write-Host "[SKIP] Local/Custom mod (shipped in repo): $filename" -ForegroundColor Gray
+    if (Test-Path $targetPath) {
+        Write-Host "[OK] Already installed: $filename" -ForegroundColor Green
         $skipped++
         continue
     }
