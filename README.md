@@ -13,15 +13,20 @@ To sync this customized pack directly into an existing Prism Launcher instance (
 2. Open the `minecraft` subfolder.
 3. Open a command prompt or terminal inside that `minecraft` folder:
    - **Address Bar Method:** Click the folder path bar at the top of File Explorer, type `cmd` or `powershell`, and hit **Enter**.
-4. Run the following command to clone and sync the repository into your non-empty folder:
+4. Run the appropriate command below inside your terminal to clone/sync the repository into your folder:
 
-```cmd
-git init && git remote add origin https://github.com/jusitnboggs/atm9nf.git && git fetch origin master && git reset --hard origin/master
-```
+   **For Windows Terminal / PowerShell (Default in Windows 11):**
+   ```powershell
+   git init; git remote add origin https://github.com/jusitnboggs/atm9nf.git; git fetch origin master; git reset --hard origin/master
+   ```
+   *(If `origin` already exists, use `git remote set-url origin https://github.com/jusitnboggs/atm9nf.git` instead of `add`).*
 
-*(Alternatively, if you already downloaded `sync_repo.bat` into the folder, simply double-click **`sync_repo.bat`**).*
+   **For Command Prompt (CMD):**
+   ```cmd
+   git init && git remote add origin https://github.com/jusitnboggs/atm9nf.git && git fetch origin master && git reset --hard origin/master
+   ```
 
-5. Double-click **`download_mods.bat`** (or run `scripts/download_mods.ps1`) to automatically delete outdated mod versions and download all added or updated mod `.jar` files for this customized fork.
+5. Double-click **`download_mods.bat`** (or run `.\scripts\download_mods.ps1` in PowerShell) to automatically delete outdated mod versions and download all added or updated mod `.jar` files.
 
 ---
 
