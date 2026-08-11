@@ -3,13 +3,12 @@
 		name: "Member"
 		power: 1
 		condition: "always_active"
-		ftbessentials.fly: true
-		ftbessentials.admin.fly: true
 		ftbessentials.back: true
 		ftbessentials.home: true
 		ftbessentials.spawn: true
 		ftbessentials.tpa: true
 		ftbessentials.rtp: true
+		ftbessentials.warp: true
 	}
 	vip: {
 		name: "VIP"
@@ -17,7 +16,14 @@
 		ftbranks.name_format: "&bVIP {name}"
 		ftbessentials.fly: true
 		ftbessentials.admin.fly: true
+		ftbessentials.admin.heal: true
+		ftbessentials.admin.god: true
 		ftbessentials.back: true
+		ftbessentials.home: true
+		ftbessentials.spawn: true
+		ftbessentials.tpa: true
+		ftbessentials.rtp: true
+		ftbessentials.warp: true
 	}
 	admin: {
 		name: "Admin"
