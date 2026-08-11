@@ -49,3 +49,14 @@
 - AEInfinityBooster-1.20.1-1.0.0+51.jar
 - forbidden_arcanus_emc-0.1.0+forge-1.20.1.jar
 - irons_spellbooks_emc-0.1.0+forge-1.20.1.jar
+- balm-forge-1.20.1-7.3.42.jar (updated)
+- bmaddon-1.0.4.jar
+- Evolved Mekanism-1.20.1-1.2.1-fix4.jar
+- ExtendedCrafting-1.20.1-6.0.10.jar
+- HammerLib-1.20.1-20.1.50.jar
+- Iglee's Library-1.20.1-1.2.7.jar
+- logisticspipes-0.0.2.jar
+- ProjectMinimapHud-neoforge-1.20.1-v1.0.0.jar
+- sebastrnlib-4.0.0.jar
+- Torcherino-forge-1.20.1-20.0.0.jar
+- wcwt-1.20.1.7-hotfix.jar
