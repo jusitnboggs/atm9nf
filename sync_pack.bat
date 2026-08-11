@@ -55,8 +55,24 @@ if %errorlevel% neq 0 (
     echo [GIT] Fetching latest pack configs, KubeJS scripts, and tweaks...
     git fetch origin master --quiet 2>nul
     if %errorlevel% equ 0 (
-        git reset --hard origin/master >nul 2>nul
-        echo [GIT] Pack repository files synced successfully!
+        :: Check for outdated / updated config files
+        set "CONFIG_COUNT=0"
+        for /f "tokens=*" %%F in ('git diff --name-only HEAD origin/master 2^>nul') do (
+            if "!CONFIG_COUNT!"=="0" (
+                echo [CONFIG SYNC] Outdated local pack files detected:
+            )
+            echo   - %%F
+            set /a CONFIG_COUNT+=1
+        )
+
+        if "!CONFIG_COUNT!"=="0" (
+            echo [CONFIG SYNC] All pack configuration files are already up to date!
+        ) else (
+            echo.
+            echo [CONFIG SYNC] Updating !CONFIG_COUNT! pack configuration files...
+            git reset --hard origin/master >nul 2>nul
+            echo [CONFIG SYNC] Pack configuration files updated successfully!
+        )
     ) else (
         echo [WARNING] Could not connect to GitHub repository.
         echo           Proceeding with local pack files.
@@ -66,7 +82,7 @@ if %errorlevel% neq 0 (
 
 echo [MODS] Running mod sync downloader...
 if exist "%~dp0scripts\download_mods.ps1" (
-    powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0scripts\download_mods.ps1"
+    powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0scripts\download_mods.ps1" -PromptCleanup -PromptDownload
     if %errorlevel% equ 0 (
         echo.
         echo [SUCCESS] Mod download and verification complete!
@@ -78,6 +94,7 @@ if exist "%~dp0scripts\download_mods.ps1" (
     echo [ERROR] Could not find "%~dp0scripts\download_mods.ps1"!
 )
 
+echo.
 echo =========================================================================
 echo   Sync Complete! You can now launch Minecraft.
 echo =========================================================================

@@ -1,6 +1,11 @@
 # Automated Mod Downloader & Sync Script for ATM9 No Frills
 # Downloads added/updated mod jars from Modrinth/CurseForge/CDN links
 
+param (
+    [switch]$PromptCleanup,
+    [switch]$PromptDownload
+)
+
 $ErrorActionPreference = "Continue"
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $instanceRoot = Split-Path -Parent $scriptDir
@@ -23,26 +28,79 @@ if (-not (Test-Path $urlsFile)) {
     exit 1
 }
 
-$modUrls = Get-Content $urlsFile -Raw | ConvertFrom-Json
-
-# 1. Clean up explicitly replaced old mod versions (exact matching only, no wildcards)
+# 1. Clean up explicitly replaced old mod versions
 if (Test-Path $updatedFile) {
-    Write-Host "Checking for explicitly replaced old mod versions..." -ForegroundColor Cyan
     $lines = Get-Content $updatedFile | Where-Object { $_ -and -not $_.StartsWith("#") }
+    $toRemove = @()
     foreach ($line in $lines) {
         if ($line -match "^\s*([^\s]+)\s*->\s*([^\s]+)\s*$") {
             $oldJar = $matches[1]
             $newJar = $matches[2]
             $oldPath = Join-Path $modsDir $oldJar
             if (Test-Path $oldPath) {
-                Write-Host "[REMOVING OUTDATED MOD] $oldJar -> Replacing with $newJar" -ForegroundColor Yellow
-                Remove-Item $oldPath -Force -ErrorAction SilentlyContinue
+                $toRemove += [PSCustomObject]@{ Old = $oldJar; New = $newJar; Path = $oldPath }
             }
         }
+    }
+
+    if ($toRemove.Count -gt 0) {
+        Write-Host "`n[OUTDATED MODS FOUND] The following old mod files can be cleaned up:" -ForegroundColor Yellow
+        foreach ($item in $toRemove) {
+            Write-Host "  - $($item.Old) -> Replace with $($item.New)" -ForegroundColor Yellow
+        }
+
+        $doCleanup = $true
+        if ($PromptCleanup) {
+            $answer = Read-Host "Do you want to run the outdated mod cleanup routine? (Y/N) [default: Y]"
+            if ($answer -and $answer.Trim().ToUpper() -eq "N") {
+                $doCleanup = $false
+            }
+        }
+
+        if ($doCleanup) {
+            foreach ($item in $toRemove) {
+                Write-Host "[REMOVING OUTDATED MOD] $($item.Old) -> Replacing with $($item.New)" -ForegroundColor Yellow
+                Remove-Item $item.Path -Force -ErrorAction SilentlyContinue
+            }
+        } else {
+            Write-Host "[SKIPPED] Outdated mod cleanup skipped by user." -ForegroundColor Gray
+        }
+    } else {
+        Write-Host "[CLEANUP] No outdated mod files found in mods/." -ForegroundColor Green
     }
 }
 
 # 2. Download missing mods
+$modUrls = Get-Content $urlsFile -Raw | ConvertFrom-Json
+$missingMods = @()
+
+foreach ($prop in $modUrls.PSObject.Properties) {
+    $filename = $prop.Name
+    $url = $prop.Value
+    $targetPath = Join-Path $modsDir $filename
+
+    if ($url -ne "LOCAL_CUSTOM" -and $url -ne "SEARCH_CURSEFORGE" -and -not [string]::IsNullOrWhiteSpace($url)) {
+        if (-not (Test-Path $targetPath)) {
+            $missingMods += [PSCustomObject]@{ Name = $filename; Url = $url; Path = $targetPath }
+        }
+    }
+}
+
+$doDownload = $true
+if ($missingMods.Count -gt 0) {
+    Write-Host "`n[MISSING MODS FOUND] $($missingMods.Count) required mod files need to be downloaded:" -ForegroundColor Yellow
+    foreach ($m in $missingMods) {
+        Write-Host "  - $($m.Name)" -ForegroundColor Yellow
+    }
+
+    if ($PromptDownload) {
+        $answer = Read-Host "`nDo you want to download missing/updated mods from the list? (Y/N) [default: Y]"
+        if ($answer -and $answer.Trim().ToUpper() -eq "N") {
+            $doDownload = $false
+        }
+    }
+}
+
 $downloaded = 0
 $skipped = 0
 $failed = 0
@@ -75,6 +133,11 @@ foreach ($prop in $modUrls.PSObject.Properties) {
     if (Test-Path $targetPath) {
         Write-Host "[OK] Already installed: $filename" -ForegroundColor Green
         $skipped++
+        continue
+    }
+
+    if (-not $doDownload) {
+        Write-Host "[SKIPPED] Mod download skipped by user: $filename" -ForegroundColor Gray
         continue
     }
     
