@@ -84,3 +84,8 @@ The following mods and dependencies were ported over from the main ATM9 instance
 - create_jetpack-forge-4.4.2.jar (updated)
 - create-new-age-forge-1.20.1-1.1.4.jar (updated)
 - Steam_Rails-1.6.13-alpha+forge-mc1.20.1.jar (updated)
+- oculus-flywheel-compat-forge1.20.1+1.1.2.jar (REMOVED due to incompatibility with Create 6.0.6)
+- tombstone-1.20.1-9.0.9.jar (updated)
+- domum_ornamentum-1.20.1-1.0.291-snapshot-universal.jar (updated)
+- ponderjs-1.20.1-2.0.6.jar (updated)
+- sliceanddice-forge-3.5.2.jar (updated)
