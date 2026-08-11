@@ -46,18 +46,32 @@ if (Test-Path $updatedFile) {
 $downloaded = 0
 $skipped = 0
 $failed = 0
+$needsManual = 0
+$manualList = @()
 
 foreach ($prop in $modUrls.PSObject.Properties) {
     $filename = $prop.Name
     $url = $prop.Value
     $targetPath = Join-Path $modsDir $filename
-    
-    if ($url -eq "LOCAL_CUSTOM" -or $url -eq "SEARCH_CURSEFORGE" -or [string]::IsNullOrWhiteSpace($url)) {
-        Write-Host "[SKIP] Local/Custom mod (shipped in repo): $filename" -ForegroundColor Gray
+
+    if ($url -eq "LOCAL_CUSTOM") {
+        Write-Host "[SKIP] Custom mod (shipped in repo via git): $filename" -ForegroundColor Gray
         $skipped++
         continue
     }
-    
+
+    if ($url -eq "SEARCH_CURSEFORGE" -or [string]::IsNullOrWhiteSpace($url)) {
+        if (-not (Test-Path $targetPath)) {
+            Write-Host "[MANUAL DOWNLOAD NEEDED] Not shipped in repo, no verified direct URL: $filename" -ForegroundColor Yellow
+            $needsManual++
+            $manualList += $filename
+        } else {
+            Write-Host "[OK] Already installed: $filename" -ForegroundColor Green
+            $skipped++
+        }
+        continue
+    }
+
     if (Test-Path $targetPath) {
         Write-Host "[OK] Already installed: $filename" -ForegroundColor Green
         $skipped++
@@ -76,8 +90,16 @@ foreach ($prop in $modUrls.PSObject.Properties) {
 }
 
 Write-Host "`n==========================================================" -ForegroundColor Cyan
-Write-Host "  Sync Complete: $downloaded downloaded, $skipped present, $failed failed" -ForegroundColor Cyan
+Write-Host "  Sync Complete: $downloaded downloaded, $skipped present, $failed failed, $needsManual need manual download" -ForegroundColor Cyan
 Write-Host "==========================================================" -ForegroundColor Cyan
+
+if ($needsManual -gt 0) {
+    Write-Host "`nThe following mods are NOT in the repo and have no verified direct download URL." -ForegroundColor Yellow
+    Write-Host "Get them manually from CurseForge and place them in mods\:" -ForegroundColor Yellow
+    foreach ($m in $manualList) {
+        Write-Host "  - $m" -ForegroundColor Yellow
+    }
+}
 
 if ($failed -gt 0) {
     exit 1
