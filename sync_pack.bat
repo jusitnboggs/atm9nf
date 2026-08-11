@@ -10,6 +10,34 @@ echo   All The Mods 9 - No Frills (Custom Fork Sync Tool)
 echo =========================================================================
 echo.
 
+:: Dev Environment Guard - Do nothing in Dev Environment
+if exist ".dev_environment" (
+    echo [DEV MODE] Developer environment detected ^(.dev_environment^).
+    echo           Pack sync and mod downloading are disabled in Dev Mode.
+    echo           Your local files, configs, and uncommitted code are protected.
+    echo.
+    echo =========================================================================
+    echo   Sync bypassed ^(Dev Mode^). You can now launch Minecraft.
+    echo =========================================================================
+    echo.
+    echo Press any key to close this window...
+    pause >nul
+    exit /b 0
+)
+if "%ATM9_DEV%"=="1" (
+    echo [DEV MODE] Developer environment variable ATM9_DEV detected.
+    echo           Pack sync and mod downloading are disabled in Dev Mode.
+    echo           Your local files, configs, and uncommitted code are protected.
+    echo.
+    echo =========================================================================
+    echo   Sync bypassed ^(Dev Mode^). You can now launch Minecraft.
+    echo =========================================================================
+    echo.
+    echo Press any key to close this window...
+    pause >nul
+    exit /b 0
+)
+
 where git >nul 2>nul
 if %errorlevel% neq 0 (
     echo [WARNING] Git is not installed or not in PATH.
@@ -24,26 +52,16 @@ if %errorlevel% neq 0 (
         git remote set-url origin https://github.com/jusitnboggs/atm9nf.git >nul 2>nul
     )
 
-    if exist ".dev_environment" (
-        echo [DEV MODE] Developer environment detected ^(.dev_environment^).
-        echo           Skipping git reset to protect your local uncommitted work.
-        echo.
-    ) else if "%ATM9_DEV%"=="1" (
-        echo [DEV MODE] Developer environment variable ATM9_DEV detected.
-        echo           Skipping git reset to protect your local uncommitted work.
-        echo.
+    echo [GIT] Fetching latest pack configs, KubeJS scripts, and tweaks...
+    git fetch origin master --quiet 2>nul
+    if %errorlevel% equ 0 (
+        git reset --hard origin/master >nul 2>nul
+        echo [GIT] Pack repository files synced successfully!
     ) else (
-        echo [GIT] Fetching latest pack configs, KubeJS scripts, and tweaks...
-        git fetch origin master --quiet 2>nul
-        if %errorlevel% equ 0 (
-            git reset --hard origin/master >nul 2>nul
-            echo [GIT] Pack repository files synced successfully!
-        ) else (
-            echo [WARNING] Could not connect to GitHub repository.
-            echo           Proceeding with local pack files.
-        )
-        echo.
+        echo [WARNING] Could not connect to GitHub repository.
+        echo           Proceeding with local pack files.
     )
+    echo.
 )
 
 echo [MODS] Running mod sync downloader...
@@ -60,7 +78,6 @@ if exist "%~dp0scripts\download_mods.ps1" (
     echo [ERROR] Could not find "%~dp0scripts\download_mods.ps1"!
 )
 
-echo.
 echo =========================================================================
 echo   Sync Complete! You can now launch Minecraft.
 echo =========================================================================
