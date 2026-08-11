@@ -44,3 +44,6 @@
 - appliedsoul-1.20.1-1.0.0.jar
 - extendedae_plus-1.5.5.jar
 
+- megacells-forge-2.4.6-1.20.1.jar
+- merequester-forge-1.20.1-1.1.5.jar
+- AEInfinityBooster-1.20.1-1.0.0+51.jar
