@@ -16,7 +16,7 @@
 		# Allows admins to toggle flying status using a command, without having to use Creative Mode
 		fly: {
 			# Default: true
-			enabled: false
+			enabled: true
 		}
 		
 		# Allows admins to toggle invincibility using a command, without having to use Creative Mode
@@ -99,14 +99,14 @@
 			# Range: 0 ~ 604800
 			cooldown: 30
 			
-			# Default: true
-			enabled: false
+			# Default: false
+			enabled: true
 			
 			# Max size of the teleport history. This limits how many times you can use /back
 			# You can override this with FTB Ranks using ftbessentials.back.max
 			# Default: 10
 			# Range: 0 ~ 2147483647
-			max: 0
+			max: 10
 			
 			# Should be the /back command only be used for returning to the last death point?
 			# Default: false
