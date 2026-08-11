@@ -26,7 +26,7 @@ To sync this customized pack directly into an existing Prism Launcher instance (
    git init && git remote add origin https://github.com/jusitnboggs/atm9nf.git && git fetch origin master && git reset --hard origin/master
    ```
 
-5. Double-click **`download_mods.bat`** (or run `.\scripts\download_mods.ps1` in PowerShell) to automatically delete outdated mod versions and download all added or updated mod `.jar` files.
+5. Double-click **`sync_pack.bat`** to automatically keep all custom pack configs, KubeJS scripts, and mod `.jar` files synced and updated.
 
 ---
 
