@@ -8,17 +8,18 @@ projectexpansion-1.20.1-1.1.3.jar
 emc-interface-1.20.1.1.jar
 solarfluxkeepupgrades-forge-1.20-1.20.1-1.2.0.jar
 SolarFluxReborn-1.20.1-20.1.11.jar
-HammerLib-1.20.1-20.1.44.jar
+HammerLib-1.20.1-20.1.50.jar
 avaritia_delight-0.3.4.jar
 AvaritiaTweak-forge-1.20.1-1.3.0-release.jar
 mekanism_avaritia-0.1.jar
 Re-Avaritia_Ad Astra Oxygen Patch.jar
 Re-Avaritia-forge-1.20.1-1.4.1-release.jar
+ExtendedCrafting-1.20.1-6.0.10.jar
 applied_extended_crafting-1.1.2.jar
 applied-botanics-forge-1.5.2.jar
 appliedcooking-4.0.0.jar
 sebastrnlib-4.0.0.jar
-appliedcreate-1.20.1-1.1.6.jar
+appliedcreate-1.20.1-1.0.0.jar
 appliede-0.14.7-fix2.jar
 appliedenoughitems-1.1.1.jar
 AppliedFlux-1.20-1.3.4-forge.jar
@@ -31,8 +32,11 @@ assembler-matrix-prioritization-forge-1.20.1-1.0.3.jar
 AE2 Molecular Assembler Plus-1.1.0.jar
 ae2craftpriority-0.1.0.jar
 ae2wtlib-15.3.3-forge.jar
+ldlib-forge-1.20.1-1.0.52.jar
 crazyae2addons-3.2.3-all.jar
+rechiseled-1.2.5-forge-mc1.20.1.jar
 rechiseledae-1.0.1-forge-mc1.20.1.jar
+guideme-20.1.15.jar
 ExtendedAE-1.20-1.4.18-forge.jar
 extendedae_plus-1.5.5.jar
 appliedenergistics2-forge-15.4.10.jar
