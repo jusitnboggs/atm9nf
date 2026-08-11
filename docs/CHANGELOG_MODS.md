@@ -15,7 +15,7 @@ The following existing mods were updated to match the main ATM9 instance:
 - create-1.20.1-6.0.6.jar
 - ad_astra-forge-1.20.1-1.15.20.jar
 
-*(Note: gtceu and forge updates were intentionally excluded.)*
+*(Note: gtceu was intentionally excluded. Forge was updated by user to fmlloader-1.20.1-47.4.22.jar.)*
 
 ## Added Mods
 The following mods and dependencies were ported over from the main ATM9 instance:
