@@ -80,3 +80,7 @@ The following mods and dependencies were ported over from the main ATM9 instance
 - guideme-20.1.13.jar
 - createaddition-1.20.1-1.3.2.jar (updated)
 - createoreexcavation-1.20-1.6.4.jar (updated)
+- create_enchantment_industry-1.3.3-for-create-6.0.6.jar (updated)
+- create_jetpack-forge-4.4.2.jar (updated)
+- create-new-age-forge-1.20.1-1.1.4.jar (updated)
+- Steam_Rails-1.6.13-alpha+forge-mc1.20.1.jar (updated)
