@@ -12,7 +12,6 @@ HammerLib-1.20.1-20.1.50.jar
 avaritia_delight-0.3.4.jar
 AvaritiaTweak-forge-1.20.1-1.3.0-release.jar
 mekanism_avaritia-0.1.jar
-Re-Avaritia_Ad Astra Oxygen Patch.jar
 Re-Avaritia-forge-1.20.1-1.4.1-release.jar
 ExtendedCrafting-1.20.1-6.0.10.jar
 applied_extended_crafting-1.1.2.jar
