@@ -43,15 +43,16 @@ if (Test-Path $updatedFile) {
 $modTargets = $modTargets | Select-Object -Unique
 
 foreach ($newModName in $modTargets) {
-    # Extract exact mod base prefix before version string or forge marker
+    if ([string]::IsNullOrWhiteSpace($newModName)) { continue }
     $baseName = $newModName -replace '[-_](?:forge|mc)?\d+.*|\d+\.\d+.*|\.jar$',''
     $baseName = $baseName.Trim('-').Trim('_')
     
-    if ($baseName -and $baseName.Length -ge 3) {
-        $existing = @()
-        $existing += Get-ChildItem $modsDir -Filter "$baseName-*.jar" -ErrorAction SilentlyContinue | Where-Object { $_.Name -ne $newModName }
-        $existing += Get-ChildItem $modsDir -Filter "$baseName_*.jar" -ErrorAction SilentlyContinue | Where-Object { $_.Name -ne $newModName }
-        $existing = $existing | Select-Object -Unique
+    if ($baseName -and $baseName.Length -ge 4) {
+        $existing = Get-ChildItem $modsDir -Filter "*.jar" -ErrorAction SilentlyContinue | Where-Object { 
+            ($_.Name.StartsWith("$baseName-", [System.StringComparison]::OrdinalIgnoreCase) -or 
+             $_.Name.StartsWith("${baseName}_", [System.StringComparison]::OrdinalIgnoreCase)) -and
+            $_.Name -ne $newModName
+        }
         
         foreach ($oldJar in $existing) {
             Write-Host "[REMOVING OUTDATED MOD] $($oldJar.Name) -> Replacing with $newModName" -ForegroundColor Yellow
