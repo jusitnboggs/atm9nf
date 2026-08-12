@@ -76,6 +76,12 @@ if %errorlevel% neq 0 (
             git reset --hard origin/master >nul 2>nul
             echo [CONFIG SYNC] Pack configuration files updated successfully!
             
+            :: Update Prism Launcher Forge / instance config (mmc-pack.json)
+            if exist "%~dp0mmc-pack.json" (
+                copy /y "%~dp0mmc-pack.json" "%~dp0..\mmc-pack.json" >nul 2>nul
+                echo [PRISM CONFIG] Synced Prism Launcher Forge version (mmc-pack.json)!
+            )
+            
             if "!SCRIPT_UPDATED!"=="1" (
                 echo.
                 echo =========================================================================

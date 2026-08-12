@@ -15,9 +15,8 @@ if (-not (Test-Path "$instanceRoot\mods")) {
 }
 
 $modsDir = Join-Path $instanceRoot "mods"
-$docsDir = Join-Path $instanceRoot "docs"
-$urlsFile = Join-Path $docsDir "mod_downloads.json"
-$updatedFile = Join-Path $docsDir "updated_mods.txt"
+$urlsFile = Join-Path $scriptDir "mod_downloads.json"
+$updatedFile = Join-Path $scriptDir "updated_mods.txt"
 
 Write-Host "==========================================================" -ForegroundColor Cyan
 Write-Host "  ATM9 No Frills Mod Sync & Downloader" -ForegroundColor Cyan
