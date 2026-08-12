@@ -114,6 +114,6 @@ echo =========================================================================
 echo.
 
 :END_PAUSE
-echo Press any key to close this window...
+echo.
 pause
-cmd /k
+
