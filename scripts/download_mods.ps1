@@ -151,6 +151,7 @@ foreach ($prop in $modUrls.PSObject.Properties) {
     } catch {
         Write-Host "  -> Download failed: $_" -ForegroundColor Red
         $failed++
+        $manualList += "$filename (Error: $_)"
     }
 }
 
@@ -159,7 +160,14 @@ Write-Host "  Sync Complete: $downloaded downloaded, $skipped present, $failed f
 Write-Host "==========================================================" -ForegroundColor Cyan
 
 if ($failed -gt 0) {
+    Write-Host "`n==========================================================" -ForegroundColor Red
+    Write-Host "  [CRITICAL ERROR] The following $failed mod(s) FAILED to download:" -ForegroundColor Red
+    foreach ($errItem in $manualList) {
+        Write-Host "    - $errItem" -ForegroundColor Red
+    }
+    Write-Host "==========================================================" -ForegroundColor Red
     exit 1
 } else {
     exit 0
 }
+

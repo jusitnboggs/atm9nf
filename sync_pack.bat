@@ -93,12 +93,15 @@ if "!SCRIPT_UPDATED!"=="1" (
 echo [MODS] Running mod sync downloader...
 if exist "%~dp0scripts\download_mods.ps1" (
     powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0scripts\download_mods.ps1" -PromptCleanup -PromptDownload
-    if %errorlevel% equ 0 (
+    if !errorlevel! equ 0 (
         echo.
         echo [SUCCESS] Mod download and verification complete.
     ) else (
         echo.
-        echo [WARNING] Mod downloader finished with errors. Check above log.
+        echo =========================================================================
+        echo   [CRITICAL WARNING] Mod sync finished WITH ERRORS!
+        echo   One or more mod files failed to download. Check output above.
+        echo =========================================================================
     )
 ) else (
     echo [ERROR] Could not find "%~dp0scripts\download_mods.ps1".
