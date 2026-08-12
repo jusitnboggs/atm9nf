@@ -50,9 +50,13 @@ if (Test-Path $updatedFile) {
 
         $doCleanup = $true
         if ($PromptCleanup) {
-            $answer = Read-Host "Do you want to run the outdated mod cleanup routine? (Y/N) [default: Y]"
-            if ($answer -and $answer.Trim().ToUpper() -eq "N") {
-                $doCleanup = $false
+            try {
+                $answer = Read-Host "Do you want to run the outdated mod cleanup routine? (Y/N) [default: Y]"
+                if ($answer -and $answer.Trim().ToUpper() -eq "N") {
+                    $doCleanup = $false
+                }
+            } catch {
+                $doCleanup = $true
             }
         }
 
@@ -93,9 +97,13 @@ if ($missingMods.Count -gt 0) {
     }
 
     if ($PromptDownload) {
-        $answer = Read-Host "`nDo you want to download missing/updated mods from the list? (Y/N) [default: Y]"
-        if ($answer -and $answer.Trim().ToUpper() -eq "N") {
-            $doDownload = $false
+        try {
+            $answer = Read-Host "`nDo you want to download missing/updated mods from the list? (Y/N) [default: Y]"
+            if ($answer -and $answer.Trim().ToUpper() -eq "N") {
+                $doDownload = $false
+            }
+        } catch {
+            $doDownload = $true
         }
     }
 }
