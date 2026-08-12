@@ -1,2 +1,6 @@
 bloodmagic-1.20.1-3.3.3-45.jar -> BloodMagic-1.18-1.20.1-3.3.8-50.jar
 ad_astra-forge-1.20.1-1.15.19.jar -> ad_astra-forge-1.20.1-1.15.20.jar
+solcarrot-1.20.1-1.15.1.jar -> solapplepie-1.20.1-2.3.0.jar
+moonlight-1.20-2.16.14-forge.jar -> moonlight-1.20-2.16.34-forge.jar
+supplementaries-1.20-3.1.40.jar -> supplementaries-1.20-3.1.43-forge.jar
+Zeta-1.0-30.jar -> Zeta-1.0-31.jar
