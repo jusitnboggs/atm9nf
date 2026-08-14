@@ -1,5 +1,7 @@
-# Automated Mod Downloader & Sync Script for ATM9 No Frills
-# Syncs custom releases from GitHub & verifies mod files in mods/ folder
+# Automated Mod Downloader & Sync Script (pack-agnostic)
+# Downloads any missing jars listed in scripts/mod_downloads.json and cleans up
+# replaced versions listed in scripts/updated_mods.txt. Works in any modpack;
+# generate the download list with: python scripts/generate_mod_downloads.py
 
 param (
     [switch]$PromptCleanup,
@@ -18,8 +20,17 @@ $modsDir = Join-Path $instanceRoot "mods"
 $urlsFile = Join-Path $scriptDir "mod_downloads.json"
 $updatedFile = Join-Path $scriptDir "updated_mods.txt"
 
+# Auto-detect the pack name from the instance's instance.cfg (falls back to a
+# generic label) so the banner works in any pack.
+$packName = "Modpack"
+$cfgPath = Join-Path (Split-Path -Parent $instanceRoot) "instance.cfg"
+if (Test-Path $cfgPath) {
+    $nameLine = Select-String -Path $cfgPath -Pattern '^name=' -ErrorAction SilentlyContinue | Select-Object -First 1
+    if ($nameLine) { $packName = ($nameLine.Line -replace '^name=', '').Trim() }
+}
+
 Write-Host "==========================================================" -ForegroundColor Cyan
-Write-Host "  ATM9 No Frills Mod Sync & Downloader" -ForegroundColor Cyan
+Write-Host "  $packName - Mod Sync & Downloader" -ForegroundColor Cyan
 Write-Host "==========================================================" -ForegroundColor Cyan
 
 if (-not (Test-Path $urlsFile)) {
@@ -79,6 +90,7 @@ $missingMods = @()
 
 foreach ($prop in $modUrls.PSObject.Properties) {
     $filename = $prop.Name
+    if ($filename.StartsWith("_")) { continue }  # skip metadata keys (_comment, _generated, _pack)
     $url = $prop.Value
     $targetPath = Join-Path $modsDir $filename
 
@@ -116,6 +128,7 @@ $manualList = @()
 
 foreach ($prop in $modUrls.PSObject.Properties) {
     $filename = $prop.Name
+    if ($filename.StartsWith("_")) { continue }  # skip metadata keys (_comment, _generated, _pack)
     $url = $prop.Value
     $targetPath = Join-Path $modsDir $filename
 

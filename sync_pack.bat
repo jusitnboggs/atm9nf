@@ -1,16 +1,19 @@
 @echo off
 setlocal enabledelayedexpansion
-title ATM9 No Frills Pack Sync Tool
+title Modpack Sync Tool
 cd /d "%~dp0"
 
 color 0B
 
 echo =========================================================================
-echo   All The Mods 9 - No Frills Custom Fork Sync Tool
+echo   Modpack Sync Tool
 echo =========================================================================
 echo.
 
+REM --- Developer bypass: presence of .dev_environment (or PACK_DEV=1) skips
+REM     all git resets so uncommitted local work is never wiped. ------------
 if exist ".dev_environment" goto DEV_MODE
+if "%PACK_DEV%"=="1" goto DEV_MODE
 if "%ATM9_DEV%"=="1" goto DEV_MODE
 goto START_SYNC
 
@@ -20,7 +23,7 @@ echo           Pack sync and mod downloading are disabled in Dev Mode.
 echo           Your local files, configs, and uncommitted code are protected.
 echo.
 echo =========================================================================
-echo   Sync bypassed Dev Mode. You can now launch Minecraft.
+echo   Sync bypassed (Dev Mode). You can now launch Minecraft.
 echo =========================================================================
 echo.
 goto END_PAUSE
@@ -34,26 +37,83 @@ if %errorlevel% neq 0 (
     goto RUN_MODS
 )
 
+REM --- Optional first-time bootstrap config (scripts\pack_sync.conf):
+REM       REPO_URL=https://github.com/you/yourpack.git
+REM       BRANCH=main
+REM     Used only to seed a brand-new clone. An existing repo's own remote and
+REM     branch are always auto-detected and take precedence. -----------------
+set "REPO_URL="
+set "SYNC_BRANCH="
+if exist "scripts\pack_sync.conf" (
+    for /f "usebackq eol=# tokens=1,* delims==" %%a in ("scripts\pack_sync.conf") do (
+        if /i "%%a"=="REPO_URL" set "REPO_URL=%%b"
+        if /i "%%a"=="BRANCH" set "SYNC_BRANCH=%%b"
+    )
+)
+
 if not exist ".git" (
-    echo [GIT] Initializing repository in instance folder...
-    git init 2>&1
-    git remote add origin https://github.com/jusitnboggs/atm9nf.git 2>&1
+    if defined REPO_URL (
+        echo [GIT] Initializing repository from scripts\pack_sync.conf ...
+        git init 2>&1
+        git remote add origin "!REPO_URL!" 2>&1
+    ) else (
+        echo [INFO] No git repository here and no scripts\pack_sync.conf REPO_URL set.
+        echo        Skipping config sync; using local pack files.
+        echo.
+        goto RUN_MODS
+    )
+)
+
+REM --- Use the repository's EXISTING origin (never overwrite it). ----------
+set "ORIGIN_URL="
+for /f "delims=" %%u in ('git remote get-url origin 2^>nul') do set "ORIGIN_URL=%%u"
+if not defined ORIGIN_URL (
+    if defined REPO_URL (
+        git remote add origin "!REPO_URL!" 2>&1
+        set "ORIGIN_URL=!REPO_URL!"
+    ) else (
+        echo [INFO] No 'origin' remote configured. Skipping config sync.
+        echo.
+        goto RUN_MODS
+    )
+)
+echo [GIT] Origin: !ORIGIN_URL!
+
+REM --- Branch: config override, else current branch. Resolved further below
+REM     after fetch if still unknown (detached HEAD / fresh clone). ---------
+set "BRANCH="
+if defined SYNC_BRANCH (
+    set "BRANCH=!SYNC_BRANCH!"
 ) else (
-    git remote set-url origin https://github.com/jusitnboggs/atm9nf.git 2>&1
+    for /f "delims=" %%b in ('git rev-parse --abbrev-ref HEAD 2^>nul') do set "BRANCH=%%b"
+    if "!BRANCH!"=="HEAD" set "BRANCH="
 )
 
 echo [GIT] Fetching latest pack configs, KubeJS scripts, and tweaks...
-git fetch origin master --quiet 2>&1
+git fetch origin --quiet 2>&1
 if %errorlevel% neq 0 (
-    echo [WARNING] Could not connect to GitHub repository.
+    echo [WARNING] Could not connect to the remote repository.
     echo           Proceeding with local pack files.
     echo.
     goto RUN_MODS
 )
 
+if not defined BRANCH (
+    git show-ref --verify --quiet refs/remotes/origin/main && set "BRANCH=main"
+)
+if not defined BRANCH (
+    git show-ref --verify --quiet refs/remotes/origin/master && set "BRANCH=master"
+)
+if not defined BRANCH (
+    echo [WARNING] Could not determine the remote branch. Skipping config sync.
+    echo.
+    goto RUN_MODS
+)
+echo [GIT] Branch: !BRANCH!
+
 set "CONFIG_COUNT=0"
 set "SCRIPT_UPDATED=0"
-for /f "tokens=*" %%F in ('git diff --name-only HEAD origin/master 2^>nul') do (
+for /f "tokens=*" %%F in ('git diff --name-only HEAD origin/!BRANCH! 2^>nul') do (
     if "!CONFIG_COUNT!"=="0" (
         echo [CONFIG SYNC] Outdated local pack files detected:
     )
@@ -71,18 +131,18 @@ if "!CONFIG_COUNT!"=="0" (
 
 echo.
 echo [CONFIG SYNC] Updating !CONFIG_COUNT! pack configuration files...
-git reset --hard origin/master 2>&1
+git reset --hard origin/!BRANCH! 2>&1
 echo [CONFIG SYNC] Pack configuration files updated successfully.
 
 if exist "%~dp0mmc-pack.json" (
     copy /y "%~dp0mmc-pack.json" "%~dp0..\mmc-pack.json" >nul 2>nul
-    echo [PRISM CONFIG] Synced Prism Launcher Forge version mmc-pack.json.
+    echo [PRISM CONFIG] Synced Prism Launcher loader mmc-pack.json.
 )
 
 if "!SCRIPT_UPDATED!"=="1" (
     echo.
     echo =========================================================================
-    echo   SELF-UPDATE New script version installed. Restarting sync...
+    echo   SELF-UPDATE: New script version installed. Restarting sync...
     echo =========================================================================
     echo.
     call "%~f0" %*
@@ -116,4 +176,3 @@ echo.
 :END_PAUSE
 echo.
 pause
-

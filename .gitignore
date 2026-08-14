@@ -26,3 +26,12 @@
 !mods/
 !mods/appliede-0.14.7-fix2.jar
 !mods/Re-Avaritia_Ad Astra Oxygen Patch.jar
+
+# 5. Never commit dev-tool secrets, caches, or run artifacts (these re-ignore
+#    entries must stay AFTER the "!scripts/**" allow above -- last match wins).
+#    The .example template is intentionally NOT matched here, so it stays tracked.
+scripts/pack_sync.conf
+scripts/dev/.curseforge_api_key
+scripts/dev/.mod_check_cache.json
+scripts/dev/.last_run.log
+scripts/**/__pycache__/

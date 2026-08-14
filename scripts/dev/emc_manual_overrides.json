@@ -1,0 +1,6 @@
+{
+  "_comment": "Pack-specific manual EMC overrides (DATA, not code). emc_audit.py proposes each entry as an override suggestion when the item actually exists in this pack and its current EMC differs from the target. For a NEW pack, empty the 'overrides' list or replace it with that pack's hand-tuned values. Keeping pack-specific numbers here is what lets emc_audit.py stay generic.",
+  "overrides": [
+    {"item": "allthetweaks:atm_star", "emc": 308574800, "reason": "Calculated component recipe sum for ATM Star"}
+  ]
+}

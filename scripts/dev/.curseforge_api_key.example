@@ -1,0 +1,27 @@
+HOW TO ENABLE THE CURSEFORGE TIER OF mod_version_check.py
+=========================================================
+
+The Modrinth half of the tool needs no key. To also check CurseForge (required
+for true cross-platform drift detection), supply a free CurseForge API key one of
+two ways:
+
+  Option A -- environment variable (good for CI / one-off shells):
+      PowerShell:   $env:CURSEFORGE_API_KEY = "your-key-here"
+      Bash:         export CURSEFORGE_API_KEY="your-key-here"
+
+  Option B -- key file (good for a permanent local setup):
+      Copy this file to  scripts/dev/.curseforge_api_key  (drop the ".example"),
+      and replace its entire contents with just the raw key on the first line.
+      That filename is gitignored, so the key will never be committed.
+
+GETTING A KEY (free):
+  1. Sign in at  https://console.curseforge.com
+  2. Open the "API Keys" section.
+  3. Generate / copy your personal key.
+
+Notes:
+  * The key is personal and non-transferable -- do not share it or hardcode it
+    into anything that gets published.
+  * A missing or invalid key returns HTTP 403; the tool will simply skip the
+    CurseForge tier and run Modrinth-only.
+  * You can also pass a key ad hoc:  python scripts/dev/mod_version_check.py --cf-key "your-key-here"

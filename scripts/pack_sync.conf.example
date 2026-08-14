@@ -1,0 +1,11 @@
+# Optional bootstrap config for sync_pack.bat
+# ============================================
+# You only need this for a BRAND-NEW pack folder that is not a git clone yet.
+# An already-cloned instance ignores this file: sync_pack.bat auto-detects the
+# repo's existing 'origin' remote and current branch, so no config is required.
+#
+# To use: copy this file to  scripts/pack_sync.conf  (drop the ".example") and
+# set your values. Lines starting with # are ignored.
+
+REPO_URL=https://github.com/yourname/yourpack.git
+BRANCH=main
