@@ -1,14 +1,17 @@
 #!/usr/bin/env python3
 """
-emc_audit.py -- Audit ProjectE / AutoEMC values for any modpack.
+emc_audit.py -- Audit ProjectE (and, if present, AutoEMC) values for any modpack.
 
 Portable across packs: all paths, mod versions, and AutoEMC baseline numbers are
 auto-detected via pack_env (nothing is hardcoded to ATM9). If the pack has no
-ProjectE, the script says so and exits cleanly.
+ProjectE, the script says so and exits cleanly. AutoEMC is optional -- when it is
+absent (e.g. removed from the pack), the generated_entries.json scan and
+fallback-rank checks are skipped and custom_emc.json is treated as authoritative.
 
 What it does:
-  * Flags items assigned AutoEMC's fallback ranks (common/uncommon/rare/epic base)
-    -- read from the pack's own autoemc-common.toml, not hardcoded.
+  * If AutoEMC is present: flags items assigned its fallback ranks
+    (common/uncommon/rare/epic base) -- read from the pack's own
+    autoemc-common.toml, not hardcoded.
   * Flags cheap creative/debug items priced below the pack's OP floor.
   * Detects duplicate entries in custom_emc.json.
   * Scans the ProjectE Integration jar (found by glob, any version) for flat
@@ -96,6 +99,11 @@ def run_audit():
         print("Nothing to audit. Exiting.")
         return 0
 
+    # AutoEMC may be absent (removed from the pack). Its solver output
+    # (generated_entries.json) and fallback-rank checks only make sense when it is
+    # present; the OP floor / creative-item checks use its baselines but those have
+    # safe documented defaults, so they keep working either way.
+    autoemc = env.has_autoemc()
     baselines = env.autoemc_baselines()
     fallback_ranks = {
         baselines["commonBase"]: f"Common Base ({baselines['commonBase']})",
@@ -106,7 +114,9 @@ def run_audit():
     op_floor = baselines["opMinimumEmc"]
 
     custom_entries = load_custom_emc(env.CUSTOM_EMC_PATH)
-    generated_map = load_generated_emc(env.GENERATED_EMC_PATH)
+    # Orphaned when AutoEMC is gone -- skip it so custom_emc.json is treated as the
+    # sole source of truth and no dead fallback-rank items are reported.
+    generated_map = load_generated_emc(env.GENERATED_EMC_PATH) if autoemc else {}
 
     item_counts = collections.Counter(e["item"] for e in custom_entries)
     duplicates = [item for item, cnt in item_counts.items() if cnt > 1]
@@ -172,13 +182,21 @@ def run_audit():
         f.write("# EMC Audit & Rank Detection Report\n\n")
         f.write(f"*Pack: {info['name']} | Minecraft {info['mc_version']} / "
                 f"{info['loader']} | generated {time.strftime('%Y-%m-%d %H:%M')}*\n\n")
-        f.write(f"**AutoEMC baselines (from config):** common={baselines['commonBase']}, "
-                f"uncommon={baselines['uncommonBase']}, rare={baselines['rareBase']}, "
-                f"epic={baselines['epicBase']}, OP floor={op_floor}\n\n")
+        if autoemc:
+            f.write(f"**AutoEMC baselines (from config):** common={baselines['commonBase']}, "
+                    f"uncommon={baselines['uncommonBase']}, rare={baselines['rareBase']}, "
+                    f"epic={baselines['epicBase']}, OP floor={op_floor}\n\n")
+        else:
+            f.write("**AutoEMC:** removed from this pack — `custom_emc.json` is the "
+                    "authoritative EMC source; `generated_entries.json` and fallback-rank "
+                    f"checks are skipped. (OP floor {op_floor} from defaults still applied "
+                    "to creative/debug items.)\n\n")
         f.write(f"**Custom entries (`custom_emc.json`)**: {len(custom_entries)}\n")
-        f.write(f"**AutoEMC entries (`generated_entries.json`)**: {len(generated_map)}\n")
+        if autoemc:
+            f.write(f"**AutoEMC entries (`generated_entries.json`)**: {len(generated_map)}\n")
         f.write(f"**Duplicates in custom_emc.json**: {len(duplicates)}\n")
-        f.write(f"**Items on AutoEMC fallback ranks**: {len(rank_flagged)}\n")
+        if autoemc:
+            f.write(f"**Items on AutoEMC fallback ranks**: {len(rank_flagged)}\n")
         f.write(f"**Cheap creative/debug items**: {len(cheap_creative)}\n")
         f.write(f"**Integration jar**: {os.path.basename(integ_jar) if integ_jar else '(not found)'}"
                 f" | flat EMC entries found: {len(jar_emc)} | missing locally: {len(jar_missing)}\n\n")
