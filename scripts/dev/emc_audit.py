@@ -1,19 +1,17 @@
 #!/usr/bin/env python3
 """
-emc_audit.py -- Audit ProjectE (and, if present, AutoEMC) values for any modpack.
+emc_audit.py -- Audit ProjectE EMC values for any modpack.
 
-Portable across packs: all paths, mod versions, and AutoEMC baseline numbers are
-auto-detected via pack_env (nothing is hardcoded to ATM9). If the pack has no
-ProjectE, the script says so and exits cleanly. AutoEMC is optional -- when it is
-absent (e.g. removed from the pack), the generated_entries.json scan and
-fallback-rank checks are skipped and custom_emc.json is treated as authoritative.
+Portable across packs: all paths, mod versions, and pack names are auto-detected
+via pack_env (nothing is hardcoded to ATM9). If the pack has no ProjectE, the
+script says so and exits cleanly.
+
+`config/ProjectE/custom_emc.json` is the authoritative EMC source. (AutoEMC was
+removed from this pack; there is no solver output to reconcile against anymore.)
 
 What it does:
-  * If AutoEMC is present: flags items assigned its fallback ranks
-    (common/uncommon/rare/epic base) -- read from the pack's own
-    autoemc-common.toml, not hardcoded.
-  * Flags cheap creative/debug items priced below the pack's OP floor.
   * Detects duplicate entries in custom_emc.json.
+  * Flags cheap creative/debug items priced below the OP floor.
   * Scans the ProjectE Integration jar (found by glob, any version) for flat
     item->EMC data and reports items present there but missing locally.
   * Proposes overrides from scripts/emc_manual_overrides.json (pack-specific data)
@@ -21,7 +19,6 @@ What it does:
 
 Outputs (to docs/):
   emc_audit_report_YYYYMMDD_HHMMSS.md   timestamped report
-  emc_rank_flagged.json                 fallback-rank items, for review
   emc_override_suggestions.json         consumed by emc_apply_overrides.py
 
 Pure stdlib.
@@ -36,19 +33,15 @@ import zipfile
 
 import pack_env as env
 
+# Creative/debug items must never sit below this. Self-contained (no AutoEMC).
+OP_FLOOR = 1_000_000_000_000  # 1 trillion
+
 
 def load_custom_emc(path):
     if not os.path.exists(path):
         return []
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f).get("entries", [])
-
-
-def load_generated_emc(path):
-    if not os.path.exists(path):
-        return {}
-    with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
 
 
 def load_manual_overrides():
@@ -99,46 +92,21 @@ def run_audit():
         print("Nothing to audit. Exiting.")
         return 0
 
-    # AutoEMC may be absent (removed from the pack). Its solver output
-    # (generated_entries.json) and fallback-rank checks only make sense when it is
-    # present; the OP floor / creative-item checks use its baselines but those have
-    # safe documented defaults, so they keep working either way.
-    autoemc = env.has_autoemc()
-    baselines = env.autoemc_baselines()
-    fallback_ranks = {
-        baselines["commonBase"]: f"Common Base ({baselines['commonBase']})",
-        baselines["uncommonBase"]: f"Uncommon Base ({baselines['uncommonBase']})",
-        baselines["rareBase"]: f"Rare Base ({baselines['rareBase']})",
-        baselines["epicBase"]: f"Epic Base ({baselines['epicBase']})",
-    }
-    op_floor = baselines["opMinimumEmc"]
-
     custom_entries = load_custom_emc(env.CUSTOM_EMC_PATH)
-    # Orphaned when AutoEMC is gone -- skip it so custom_emc.json is treated as the
-    # sole source of truth and no dead fallback-rank items are reported.
-    generated_map = load_generated_emc(env.GENERATED_EMC_PATH) if autoemc else {}
 
     item_counts = collections.Counter(e["item"] for e in custom_entries)
     duplicates = [item for item, cnt in item_counts.items() if cnt > 1]
     custom_map = {e["item"]: e["emc"] for e in custom_entries}
-    known_items = set(custom_map) | set(generated_map)
+    known_items = set(custom_map)
     known_namespaces = {k.split(":", 1)[0] for k in known_items if ":" in k}
-
-    # Items sitting exactly on an AutoEMC fallback rank -> base-item review candidates
-    rank_flagged = []
-    for item_id, emc in generated_map.items():
-        if emc in fallback_ranks:
-            rank_flagged.append({"item": item_id, "emc": emc, "rank": fallback_ranks[emc]})
 
     # Cheap creative/debug items below the OP floor
     cheap_creative = []
     creative_keywords = ["creative", "debug", "infinity", "infinite"]
-    for source in (custom_map, generated_map):
-        for item_id, emc in source.items():
-            low = item_id.lower()
-            if any(kw in low for kw in creative_keywords) and emc < op_floor:
-                if not any(c["item"] == item_id for c in cheap_creative):
-                    cheap_creative.append({"item": item_id, "emc": emc})
+    for item_id, emc in custom_map.items():
+        low = item_id.lower()
+        if any(kw in low for kw in creative_keywords) and emc < OP_FLOOR:
+            cheap_creative.append({"item": item_id, "emc": emc})
 
     # Integration jar scan (globbed -- version-agnostic)
     integ_jar = env.find_mod("ProjectE_Integration", "ProjectEIntegration", "projecteintegration")
@@ -168,8 +136,8 @@ def run_audit():
     for c in cheap_creative:
         suggestions.append({
             "item": c["item"],
-            "emc": op_floor,
-            "reason": f"Creative/debug item elevated to OP floor ({op_floor})",
+            "emc": OP_FLOOR,
+            "reason": f"Creative/debug item elevated to OP floor ({OP_FLOOR})",
         })
 
     # ---- write report -------------------------------------------------------
@@ -179,24 +147,13 @@ def run_audit():
     report_path = os.path.join(env.DOCS_DIR, f"emc_audit_report_{stamp}.md")
 
     with open(report_path, "w", encoding="utf-8") as f:
-        f.write("# EMC Audit & Rank Detection Report\n\n")
+        f.write("# EMC Audit Report\n\n")
         f.write(f"*Pack: {info['name']} | Minecraft {info['mc_version']} / "
                 f"{info['loader']} | generated {time.strftime('%Y-%m-%d %H:%M')}*\n\n")
-        if autoemc:
-            f.write(f"**AutoEMC baselines (from config):** common={baselines['commonBase']}, "
-                    f"uncommon={baselines['uncommonBase']}, rare={baselines['rareBase']}, "
-                    f"epic={baselines['epicBase']}, OP floor={op_floor}\n\n")
-        else:
-            f.write("**AutoEMC:** removed from this pack — `custom_emc.json` is the "
-                    "authoritative EMC source; `generated_entries.json` and fallback-rank "
-                    f"checks are skipped. (OP floor {op_floor} from defaults still applied "
-                    "to creative/debug items.)\n\n")
+        f.write("**EMC source:** `custom_emc.json` (authoritative; AutoEMC removed). "
+                f"OP floor {OP_FLOOR}.\n\n")
         f.write(f"**Custom entries (`custom_emc.json`)**: {len(custom_entries)}\n")
-        if autoemc:
-            f.write(f"**AutoEMC entries (`generated_entries.json`)**: {len(generated_map)}\n")
         f.write(f"**Duplicates in custom_emc.json**: {len(duplicates)}\n")
-        if autoemc:
-            f.write(f"**Items on AutoEMC fallback ranks**: {len(rank_flagged)}\n")
         f.write(f"**Cheap creative/debug items**: {len(cheap_creative)}\n")
         f.write(f"**Integration jar**: {os.path.basename(integ_jar) if integ_jar else '(not found)'}"
                 f" | flat EMC entries found: {len(jar_emc)} | missing locally: {len(jar_missing)}\n\n")
@@ -207,19 +164,10 @@ def run_audit():
                 f.write(f"- `{item}` (x{item_counts[item]})\n")
             f.write("\n")
 
-        if rank_flagged:
-            f.write("## Items on AutoEMC Fallback Ranks (base-item audit candidates)\n\n")
-            f.write("| Item ID | EMC | Fallback Rank |\n|---|---|---|\n")
-            for r in rank_flagged[:50]:
-                f.write(f"| `{r['item']}` | {r['emc']} | {r['rank']} |\n")
-            if len(rank_flagged) > 50:
-                f.write(f"\n*... and {len(rank_flagged) - 50} more in `emc_rank_flagged.json`.*\n")
-            f.write("\n")
-
         if cheap_creative:
             f.write("## Cheap Creative / Debug Items\n\n")
             for c in cheap_creative[:20]:
-                f.write(f"- `{c['item']}`: current {c['emc']} -> suggested {op_floor}\n")
+                f.write(f"- `{c['item']}`: current {c['emc']} -> suggested {OP_FLOOR}\n")
             f.write("\n")
 
         if jar_missing:
@@ -230,16 +178,14 @@ def run_audit():
                 f.write(f"\n*... and {len(jar_missing) - 30} more.*\n")
             f.write("\n")
 
-    # ---- write machine-readable exports ------------------------------------
-    with open(os.path.join(env.DOCS_DIR, "emc_rank_flagged.json"), "w", encoding="utf-8") as f:
-        json.dump({"fallback_rank_items": rank_flagged}, f, indent=2)
+    # ---- write machine-readable export -------------------------------------
     with open(os.path.join(env.DOCS_DIR, "emc_override_suggestions.json"), "w", encoding="utf-8") as f:
         json.dump({"suggestions": suggestions}, f, indent=2)
 
     rel = os.path.relpath(report_path, env.MINECRAFT_DIR)
     print(f"Audit complete for: {info['name']}")
-    print(f"  duplicates={len(duplicates)} rank_flagged={len(rank_flagged)} "
-          f"cheap_creative={len(cheap_creative)} suggestions={len(suggestions)}")
+    print(f"  duplicates={len(duplicates)} cheap_creative={len(cheap_creative)} "
+          f"suggestions={len(suggestions)}")
     print(f"  integration jar: {os.path.basename(integ_jar) if integ_jar else '(not found)'} "
           f"({len(jar_missing)} entries missing locally)")
     print(f"Report: {rel}")

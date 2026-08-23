@@ -8,8 +8,7 @@ from the instance layout at runtime:
 
     from pack_env import (
         MINECRAFT_DIR, MODS_DIR, CONFIG_DIR, DOCS_DIR,
-        pack_info, find_mod, has_mod, has_projecte, has_autoemc,
-        autoemc_baselines, git,
+        pack_info, find_mod, has_mod, has_projecte, git,
     )
 
 Layout assumed (standard Minecraft instance):
@@ -20,10 +19,8 @@ Layout assumed (standard Minecraft instance):
 Nothing here is specific to ATM9 or any single pack. Pure stdlib.
 """
 
-import glob
 import json
 import os
-import re
 import subprocess
 
 # --------------------------------------------------------------------------- #
@@ -55,12 +52,9 @@ MODS_DIR = os.path.join(MINECRAFT_DIR, "mods")
 CONFIG_DIR = os.path.join(MINECRAFT_DIR, "config")
 DOCS_DIR = os.path.join(MINECRAFT_DIR, "docs")
 
-# Common EMC / ProjectE paths (only meaningful if the pack has those mods)
+# Common EMC / ProjectE paths (only meaningful if the pack has ProjectE)
 PROJECTE_DIR = os.path.join(CONFIG_DIR, "ProjectE")
-AUTOEMC_DIR = os.path.join(CONFIG_DIR, "autoemc")
 CUSTOM_EMC_PATH = os.path.join(PROJECTE_DIR, "custom_emc.json")
-GENERATED_EMC_PATH = os.path.join(AUTOEMC_DIR, "generated_entries.json")
-AUTOEMC_CONFIG_PATH = os.path.join(CONFIG_DIR, "autoemc-common.toml")
 
 # MultiMC/Prism component uid -> friendly loader name
 _LOADER_UIDS = {
@@ -160,35 +154,6 @@ def has_projecte():
     return os.path.isdir(PROJECTE_DIR) or has_mod("ProjectE", "projecte")
 
 
-def has_autoemc():
-    return os.path.exists(AUTOEMC_CONFIG_PATH) or has_mod("autoemc")
-
-
-def autoemc_baselines():
-    """Read AutoEMC's fallback-rank baselines and OP floor from the pack's own
-    autoemc-common.toml so the tools track the pack's real config instead of
-    hardcoded numbers. Falls back to AutoEMC's documented defaults."""
-    vals = {
-        "commonBase": 8,
-        "uncommonBase": 64,
-        "rareBase": 512,
-        "epicBase": 4096,
-        "opMinimumEmc": 1_000_000_000_000,
-        "highEmcWarningThreshold": 1_000_000_000_000,
-    }
-    if os.path.exists(AUTOEMC_CONFIG_PATH):
-        try:
-            with open(AUTOEMC_CONFIG_PATH, "r", encoding="utf-8") as f:
-                text = f.read()
-            for key in list(vals):
-                m = re.search(rf"^\s*{re.escape(key)}\s*=\s*(\d+)", text, re.MULTILINE)
-                if m:
-                    vals[key] = int(m.group(1))
-        except Exception:
-            pass
-    return vals
-
-
 # --------------------------------------------------------------------------- #
 # Git helpers (for the sync tooling / config generators)
 # --------------------------------------------------------------------------- #
@@ -230,14 +195,9 @@ def summary():
         f"  loader       : {info['loader']} {info['loader_version'] or ''}".rstrip(),
         f"  jars in mods : {len(list_jars())}",
         f"  ProjectE     : {'yes' if has_projecte() else 'no'}",
-        f"  AutoEMC      : {'yes' if has_autoemc() else 'no'}",
         f"  git remote   : {git_remote_url() or '(none)'}",
         f"  git branch   : {git_current_branch() or '(none/detached)'}",
     ]
-    if has_autoemc():
-        b = autoemc_baselines()
-        lines.append(f"  emc baselines: common={b['commonBase']} uncommon={b['uncommonBase']} "
-                     f"rare={b['rareBase']} epic={b['epicBase']} op_floor={b['opMinimumEmc']}")
     return "\n".join(lines)
 
 
