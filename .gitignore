@@ -24,7 +24,6 @@
 
 # 4. Allow specific custom mod jars
 !mods/
-!mods/appliede-0.14.7-fix2.jar
 !mods/Re-Avaritia_Ad Astra Oxygen Patch.jar
 
 # 5. Never commit dev-tool secrets, caches, or run artifacts (these re-ignore

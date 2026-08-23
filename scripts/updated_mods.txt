@@ -1,6 +1,50 @@
+# Old jar -> New jar. download_mods.ps1 deletes the old jar when present.
+# Entries are cumulative and safe no-ops once the old jar is gone, so users
+# updating from any prior version get cleaned up. Append new releases below.
+
+# --- RC2-era updates ---
 bloodmagic-1.20.1-3.3.3-45.jar -> BloodMagic-1.18-1.20.1-3.3.8-50.jar
 ad_astra-forge-1.20.1-1.15.19.jar -> ad_astra-forge-1.20.1-1.15.20.jar
 solcarrot-1.20.1-1.15.1.jar -> solapplepie-1.20.1-2.3.0.jar
 moonlight-1.20-2.16.14-forge.jar -> moonlight-1.20-2.16.34-forge.jar
 supplementaries-1.20-3.1.40.jar -> supplementaries-1.20-3.1.43-forge.jar
 Zeta-1.0-30.jar -> Zeta-1.0-31.jar
+
+# --- RC3 updates (v0.2.60) ---
+Botania-1.20.1-454-FORGE.jar -> Botania-1.20.1-455-FORGE.jar
+FarmersDelight-1.20.1-1.3.2.jar -> FarmersDelight-1.20.1-1.3.3.jar
+JustEnoughMekanismMultiblocks-1.20.1-4.20.jar -> JustEnoughMekanismMultiblocks-1.20.1-4.22.jar
+NoChatReports-FORGE-1.20.1-v2.2.2.jar -> NoChatReports-FORGE-1.20.1-v2.2.3.jar
+YungsBetterCaves-1.20.1-Forge-2.0.5.jar -> YungsBetterCaves-1.20.1-Forge-2.0.6.jar
+amendments-1.20-2.2.5.jar -> amendments-1.20-2.2.6.jar
+applied_extended_crafting-1.1.2.jar -> applied_extended_crafting-1.2.0.jar
+assembler-matrix-prioritization-forge-1.20.1-1.0.3.jar -> assembler-matrix-prioritization-forge-1.20.1-1.0.5.jar
+crazyae2addons-3.2.3-all.jar -> crazyae2addons-3.2.4-all.jar
+create-enchantment-industry-2.5.1.jar -> create-enchantment-industry-2.5.2.jar
+extendedae_plus-1.5.5.jar -> extendedae_plus-1.6.1-f1.jar
+fusion-1.3.12-forge-mc1.20.1.jar -> fusion-1.3.14-forge-mc1.20.1.jar
+inventoryessentials-forge-1.20.1-8.2.18.jar -> inventoryessentials-forge-1.20.1-8.2.19.jar
+irons_spellbooks-1.20.1-3.16.2.jar -> irons_spellbooks-1.20.1-3.16.3.jar
+jei-1.20.1-forge-15.49.0.188.jar -> jei-1.20.1-forge-15.49.0.191.jar
+modernfix-forge-5.27.72+mc1.20.1.jar -> modernfix-forge-5.27.77+mc1.20.1.jar
+reliquary-1.20.1-2.0.63.1553.jar -> reliquary-1.20.1-2.0.65.1565.jar
+rftoolsbuilder-1.20-6.0.9.jar -> rftoolsbuilder-1.20-6.0.10.jar
+sophisticatedbackpacks-1.20.1-3.24.65.2073.jar -> sophisticatedbackpacks-1.20.1-3.24.67.2109.jar
+sophisticatedcore-1.20.1-1.3.79.2250.jar -> sophisticatedcore-1.20.1-1.3.84.2308.jar
+sophisticatedstorage-1.20.1-1.4.79.2078.jar -> sophisticatedstorage-1.20.1-1.4.85.2124.jar
+supermartijn642corelib-1.1.24-forge-mc1.20.1.jar -> supermartijn642corelib-1.1.24a-forge-mc1.20.1.jar
+trashcans-1.0.18b-forge-mc1.20.jar -> trashcans-1.1.0-forge-mc1.20.4.jar
+wcwt-1.20.1.9-hotfix.jar -> wcwt-1.20.1.10.jar
+
+# --- RC3 removals (no replacement jar) ---
+# The updater's "old -> new" format cannot express a pure removal, and a
+# filename containing a space (Stargate Journey) breaks the parser, so these
+# four are NOT auto-cleaned. Delete them manually from mods/ if updating in
+# place. The Stargate Journey suite (+ moregates, mystgate) was replaced by JSG
+# (jsg + jsg-decoration + jsg-destiny + jsg_stargate_additions); AutoEMC and
+# AppliedE dropped.
+#   REMOVE: Stargate Journey-1.20.1-0.6.44.jar
+#   REMOVE: moregates-4.3.2-forge-1.20.1.jar
+#   REMOVE: mystgate-0.0.1.jar
+#   REMOVE: autoemc-2.0.1.jar
+#   REMOVE: appliede-0.14.7-fix2.jar
