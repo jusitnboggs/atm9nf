@@ -41,10 +41,11 @@ wcwt-1.20.1.9-hotfix.jar -> wcwt-1.20.1.10.jar
 # filename containing a space (Stargate Journey) breaks the parser, so these
 # four are NOT auto-cleaned. Delete them manually from mods/ if updating in
 # place. The Stargate Journey suite (+ moregates, mystgate) was replaced by JSG
-# (jsg + jsg-decoration + jsg-destiny + jsg_stargate_additions); AutoEMC and
-# AppliedE dropped.
+# (jsg + jsg-decoration + jsg-destiny + jsg_stargate_additions); AutoEMC,
+# AppliedE, and Logistics Pipes dropped.
 #   REMOVE: Stargate Journey-1.20.1-0.6.44.jar
 #   REMOVE: moregates-4.3.2-forge-1.20.1.jar
 #   REMOVE: mystgate-0.0.1.jar
 #   REMOVE: autoemc-2.0.1.jar
 #   REMOVE: appliede-0.14.7-fix2.jar
+#   REMOVE: logisticspipes-0.0.2.jar
