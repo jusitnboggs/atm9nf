@@ -1,10 +1,46 @@
 @echo off
+REM =========================================================================
+REM  SELF-RELAUNCH GUARD -- keeps the window open no matter how this script
+REM  dies. A cmd PARSE error (bad syntax inside a parenthesised block) aborts
+REM  before any code runs, so the :END_PAUSE / pause at the bottom can never
+REM  fire and a double-clicked window just vanishes. Running the real work in
+REM  a CALLed child means the parent keeps the window open and prints the exit
+REM  code even when the child aborts. Set SYNC_NOGUARD=1 to skip this.
+REM =========================================================================
+if defined SYNC_GUARDED goto :GUARD_DONE
+if defined SYNC_NOGUARD goto :GUARD_DONE
+set SYNC_GUARDED=1
+call "%~f0" %*
+echo.
+echo [EXIT CODE] %errorlevel%
+echo.
+echo If the window closed instantly or you see a syntax error above, re-run as:
+echo     sync_pack.bat --debug
+echo ...which echoes every command and writes sync_debug.log.
+echo.
+pause
+exit /b
+:GUARD_DONE
+
 setlocal enabledelayedexpansion
 title Modpack Sync Tool
 REM %~dp0 ends in a backslash, which escapes the closing quote and breaks
 REM parsing ("The syntax of the command is incorrect") on paths containing
 REM characters like ( ). The trailing dot keeps the quoting intact.
 cd /d "%~dp0."
+
+REM --- Debug mode: run "sync_pack.bat --debug" (or set SYNC_DEBUG=1) to echo
+REM     every command as it executes and write a full transcript to
+REM     sync_debug.log. The LAST line printed before an error is the culprit.
+set "SYNC_LOG=%~dp0sync_debug.log"
+if /i "%~1"=="--debug" set "SYNC_DEBUG=1"
+if /i "%~1"=="-d" set "SYNC_DEBUG=1"
+if defined SYNC_DEBUG (
+    echo [DEBUG] Command tracing ON. Transcript: "!SYNC_LOG!"
+    echo === sync_pack debug run %DATE% %TIME% === > "!SYNC_LOG!"
+    echo [DEBUG] cwd: %CD% >> "!SYNC_LOG!"
+    echo on
+)
 
 color 0B
 
@@ -177,5 +213,12 @@ echo =========================================================================
 echo.
 
 :END_PAUSE
+if defined SYNC_DEBUG (
+    @echo off
+    echo.
+    echo [DEBUG] Reached END_PAUSE normally ^(no parse error^).
+    echo [DEBUG] Transcript written to: !SYNC_LOG!
+    echo [DEBUG] Reached END_PAUSE. >> "!SYNC_LOG!"
+)
 echo.
 pause
