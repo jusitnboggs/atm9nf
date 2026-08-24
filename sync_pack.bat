@@ -1,7 +1,10 @@
 @echo off
 setlocal enabledelayedexpansion
 title Modpack Sync Tool
-cd /d "%~dp0"
+REM %~dp0 ends in a backslash, which escapes the closing quote and breaks
+REM parsing ("The syntax of the command is incorrect") on paths containing
+REM characters like ( ). The trailing dot keeps the quoting intact.
+cd /d "%~dp0."
 
 color 0B
 
