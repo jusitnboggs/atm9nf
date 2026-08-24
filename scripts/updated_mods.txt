@@ -39,13 +39,17 @@ wcwt-1.20.1.9-hotfix.jar -> wcwt-1.20.1.10.jar
 # --- RC3 removals (no replacement jar) ---
 # The updater's "old -> new" format cannot express a pure removal, and a
 # filename containing a space (Stargate Journey) breaks the parser, so these
-# four are NOT auto-cleaned. Delete them manually from mods/ if updating in
-# place. The Stargate Journey suite (+ moregates, mystgate) was replaced by JSG
-# (jsg + jsg-decoration + jsg-destiny + jsg_stargate_additions); AutoEMC,
-# AppliedE, and Logistics Pipes dropped.
+# are NOT auto-cleaned. Delete them manually from mods/ if updating in place.
+# Stargate mods removed entirely (the Stargate Journey suite was briefly swapped
+# to JSG, then all stargate mods were dropped); AutoEMC, AppliedE, and Logistics
+# Pipes dropped.
 #   REMOVE: Stargate Journey-1.20.1-0.6.44.jar
 #   REMOVE: moregates-4.3.2-forge-1.20.1.jar
 #   REMOVE: mystgate-0.0.1.jar
+#   REMOVE: jsg-1.20.1-5.1.2.0.jar
+#   REMOVE: jsg-decoration-1.20.1-1.0.0.0.jar
+#   REMOVE: jsg-destiny-1.20.1-1.0.0.1.jar
+#   REMOVE: jsg_stargate_additions-0.0.3-forge-1.20.1.jar
 #   REMOVE: autoemc-2.0.1.jar
 #   REMOVE: appliede-0.14.7-fix2.jar
 #   REMOVE: logisticspipes-0.0.2.jar
