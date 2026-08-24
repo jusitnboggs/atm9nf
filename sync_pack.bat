@@ -51,11 +51,22 @@ if exist "scripts\pack_sync.conf" (
     )
 )
 
+REM --- Built-in fallback: a fresh zip / CurseForge install has no .git AND no
+REM     scripts\pack_sync.conf, so without this it would never bootstrap the repo
+REM     and would keep running the stale bundled scripts (e.g. re-downloading
+REM     removed mods). Baking in the pack's own repo lets any install self-init
+REM     and pull. An EXISTING clone's own origin/branch still take precedence
+REM     (origin is read below; SYNC_BRANCH only forces the release branch). -----
+if not defined REPO_URL set "REPO_URL=https://github.com/jusitnboggs/atm9nf.git"
+if not defined SYNC_BRANCH set "SYNC_BRANCH=master"
+
+set "FRESH_INIT="
 if not exist ".git" (
     if defined REPO_URL (
-        echo [GIT] Initializing repository from scripts\pack_sync.conf ...
+        echo [GIT] No local repo found. Initializing from !REPO_URL! ...
         git init 2>&1
         git remote add origin "!REPO_URL!" 2>&1
+        set "FRESH_INIT=1"
     ) else (
         echo [INFO] No git repository here and no scripts\pack_sync.conf REPO_URL set.
         echo        Skipping config sync; using local pack files.
@@ -124,13 +135,21 @@ for /f "tokens=*" %%F in ('git diff --name-only HEAD origin/!BRANCH! 2^>nul') do
 )
 
 if "!CONFIG_COUNT!"=="0" (
-    echo [CONFIG SYNC] All pack configuration files are already up to date.
-    echo.
-    goto RUN_MODS
+    if "!FRESH_INIT!"=="1" (
+        REM Fresh git init has an unborn HEAD, so the diff above finds nothing.
+        REM Force the checkout so the freshly-initialized install actually gets
+        REM origin's files instead of keeping the stale bundled ones.
+        echo [CONFIG SYNC] Fresh install -- checking out !BRANCH! from origin...
+        set "SCRIPT_UPDATED=1"
+    ) else (
+        echo [CONFIG SYNC] All pack configuration files are already up to date.
+        echo.
+        goto RUN_MODS
+    )
 )
 
 echo.
-echo [CONFIG SYNC] Updating !CONFIG_COUNT! pack configuration files...
+echo [CONFIG SYNC] Updating pack configuration files...
 git reset --hard origin/!BRANCH! 2>&1
 echo [CONFIG SYNC] Pack configuration files updated successfully.
 
