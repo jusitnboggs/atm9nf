@@ -1,0 +1,4 @@
+# Windows scripts must stay CRLF so cmd.exe parses them and raw/curl
+# downloads run. Store exact bytes -- no EOL normalization.
+*.bat -text
+*.ps1 -text
